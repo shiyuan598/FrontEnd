@@ -1,0 +1,1975 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://www.cnblogs.com/coco1s/p/4034937.html -->
+<html lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="origin">
+    <title>BAT及各大互联网公司2014前端笔试面试题--Html,Css篇 - ChokCoco - 博客园</title>
+<meta property="og:description" content="很多面试题是我自己面试BAT亲身经历碰到的。整理分享出来希望更多的前端er共同进步吧，不仅适用于求职者，对于巩固复习前端基础更是大有裨益。 而更多的题目是我一路以来收集的，也有往年的，答案不确保一定正">
+    <link type="text/css" rel="stylesheet" href="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/blog-common.css">
+<link type="text/css" rel="stylesheet" href="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/177636.css">
+<link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/bundle-ThinkInside-mobile.css">
+    <link title="RSS" type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/coco1s/rss">
+    <link title="RSD" type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/coco1s/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/coco1s/wlwmanifest.xml">
+    <script src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/osd.js.下载"></script><script async="" src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/analytics.js.下载"></script><script type="text/javascript" src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/encoder.js.下载"></script><script src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/pubads_impl_rendering_308.js.下载"></script><script src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/jquery-2.2.0.min.js.下载"></script>
+    <script>var currentBlogId=177636;var currentBlogApp='coco1s',cb_enable_mathjax=true;var isLogined=false;</script>
+    <script type="text/x-mathjax-config;executed=true">
+    MathJax.Hub.Config({
+        tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']], processClass: 'math', processEscapes: true },
+        TeX: { 
+            equationNumbers: { autoNumber: ['AMS'], useLabelIds: true }, 
+            extensions: ['extpfeil.js'],
+            Macros: {bm: "\\boldsymbol"}
+        },
+        'HTML-CSS': { linebreaks: { automatic: true } },
+        SVG: { linebreaks: { automatic: true } }
+        });
+    </script><script src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/MathJax.js.下载"></script>
+<script src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/blog-common.js.下载" type="text/javascript"></script>
+<link rel="shortcut icon" href="http://images.cnblogs.com/cnblogs_com/coco1s/965277/o_favicon.png"><link rel="preload" href="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/f(4).txt" as="script"><script type="text/javascript" src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/f(4).txt"></script><script src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/pubads_impl_308.js.下载" async=""></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><link rel="prefetch" href="http://tpc.googlesyndication.com/safeframe/1-0-32/html/container.html"><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+<body><div id="MathJax_Message" style="display: none;"></div>
+<a name="top"></a>
+
+<div id="page_begin_html"><!--<link rel="stylesheet" type="text/css" href="http://res.cocococo.com/newStyle.css" />-->
+<script type="text/javascript">window['__document_write_ajax_callbacks__']['3']();</script><script>window['__document_write_ajax_callbacks__']['1']();</script>
+<script type="text/javascript">window['__document_write_ajax_callbacks__']['4']();</script><script>window['__document_write_ajax_callbacks__']['2']();</script></div><script>load_page_begin_html();</script>
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="https://www.cnblogs.com/coco1s/"><img id="blogLogo" src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="https://www.cnblogs.com/coco1s/">ChokCoco</a></h1>
+<h2>经不住流年似水, 逃不过此间少年</h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+	<div id="navigator">
+		
+<ul id="navList">
+<li><a id="blog_nav_sitehome" class="menu" href="https://www.cnblogs.com/">博客园</a></li>
+<li><a id="blog_nav_myhome" class="menu" href="https://www.cnblogs.com/coco1s/">首页</a></li>
+<li><a id="blog_nav_newpost" class="menu" rel="nofollow" href="https://i.cnblogs.com/EditPosts.aspx?opt=1">新随笔</a></li>
+<li><a id="blog_nav_contact" class="menu" rel="nofollow" href="https://msg.cnblogs.com/send/ChokCoco">联系</a></li>
+<li><a id="blog_nav_rss" class="menu" href="https://www.cnblogs.com/coco1s/rss">订阅</a>
+<!--<a id="blog_nav_rss_image" class="aHeaderXML" href="https://www.cnblogs.com/coco1s/rss"><img src="//www.cnblogs.com/images/xml.gif" alt="订阅" /></a>--></li>
+<li><a id="blog_nav_admin" class="menu" rel="nofollow" href="https://i.cnblogs.com/">管理</a></li>
+</ul>
+		<div class="blogStats">
+			
+			<div id="blog_stats">
+<span id="stats_post_count">随笔 - 90&nbsp; </span>
+<span id="stats_article_count">文章 - 3&nbsp; </span>
+<span id="stats-comment_count">评论 - 1655</span>
+</div>
+			
+		</div><!--end: blogStats -->
+	</div><!--end: navigator 博客导航栏 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		
+        <div id="post_detail">
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="https://www.cnblogs.com/coco1s/p/4034937.html">BAT及各大互联网公司2014前端笔试面试题--Html,Css篇</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body" class="blogpost-body"><p><span style="font-size: 14px; font-family: verdana, geneva;">　　很多面试题是我自己面试BAT亲身经历碰到的。整理分享出来希望更多的前端er共同进步吧，不仅适用于求职者，对于巩固复习前端基础更是大有裨益。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　而更多的题目是我一路以来收集的，也有往年的，答案不确保一定正确，如有错误或有更好的解法，还请斧正。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　前面几题是会很基础，越下越有深度。</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">　　附上第一篇：<span style="color: #3366ff;"><a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/coco1s/p/4029708.html"><span style="color: #3366ff;">BAT及各大互联网公司2014前端笔试面试题--JavaScript篇</span></a></span></span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;"><strong><span style="color: #000000; background-color: #99ccff;">　　Html篇：</span></strong></span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>1.你做的页面在哪些流览器测试过？这些浏览器的内核分别是什么?</strong></span></p>
+<ul>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">&nbsp;IE:&nbsp;trident内核&nbsp;</span></li>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">&nbsp;Firefox：gecko内核&nbsp;</span></li>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">&nbsp;Safari:webkit内核</span></li>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">&nbsp;Opera:以前是presto内核，Opera现已改用Google Chrome的<span style="color: #ff00ff;">Blink内核</span><br></span></li>
+<li class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;Chrome:Blink(基于webkit，<span style="color: #3366ff;"><a href="http://baike.baidu.com/view/1369399.htm#1_5"><span style="color: #3366ff;">Google与Opera Software共同开发</span></a></span>)&nbsp;<br></span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>2.每个HTML文件里开头都有个很重要的东西，Doctype，知道这是干什么的吗？</strong></span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：&lt;!DOCTYPE&gt;&nbsp;声明位于文档中的最前面的位置，处于&nbsp;&lt;html&gt;&nbsp;标签之前。此标签可告知浏览器文档使用哪种&nbsp;HTML&nbsp;或&nbsp;XHTML&nbsp;规范。（<span style="color: #ff00ff;">重点：告诉浏览器按照何种规范解析页面</span>）</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>3.Quirks模式是什么？它和Standards模式有什么区别</strong></span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　从IE6开始，引入了Standards模式，标准模式中，浏览器尝试给符合标准的文档在规范上的正确处理达到在指定浏览器中的程度。</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　在IE6之前CSS还不够成熟，所以IE5等之前的浏览器对CSS的支持很差，&nbsp;IE6将对CSS提供更好的支持，然而这时的问题就来了，因为有很多页面是基于旧的布局方式写的，而如果IE6&nbsp;支持CSS则将令这些页面显示不正常，如何在即保证不破坏现有页面，又提供新的渲染机制呢？</span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">　　在写程序时我们也会经常遇到这样的问题，如何保证原来的接口不变，又提供更强大的功能，尤其是新功能不兼容旧功能时。遇到这种问题时的一个常见做法是增加参数和分支，即当某个参数为真时，我们就使用新功能，而如果这个参数&nbsp;不为真时，就使用旧功能，这样就能不破坏原有的程序，又提供新功能。IE6也是类似这样做的，它将DTD当成了这个“参数”，因为以前的页面大家都不会去写DTD，所以IE6就假定&nbsp;如果写了DTD，就意味着这个页面将采用对CSS支持更好的布局，而如果没有，则采用兼容之前的布局方式。这就是Quirks模式（怪癖模式，诡异模式，怪异模式）。</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　区别：</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　总体会有布局、样式解析和脚本执行三个方面的区别。</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　盒模型：在W3C标准中，如果设置一个元素的宽度和高度，指的是元素内容的宽度和高度，而在Quirks&nbsp;模式下，IE的宽度和高度还包含了padding和border。</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">&nbsp; &nbsp; &nbsp;&nbsp;<img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/191309249047905.png" alt="" width="557" height="208"></span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　设置行内元素的高宽：在Standards模式下，给&lt;span&gt;等行内元素设置wdith和height都不会生效，而在quirks模式下，则会生效。</span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">　　设置百分比的高度：在standards模式下，一个元素的高度是由其包含的内容来决定的，如果父元素没有设置百分比的高度，子元素设置一个百分比的高度是无效的用margin:0&nbsp;auto设置水平居中：使用margin:0&nbsp;auto在standards模式下可以使元素水平居中，但在quirks模式下却会失效。</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　（<span style="color: #ff00ff;">还有很多，答出什么不重要，关键是看他答出的这些是不是自己经验遇到的，还是说都是看文章看的，甚至完全不知道。</span>）</span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>4.div+css的布局较table布局有什么优点？</strong></span></p>
+<ul>
+<li class="p15"><span style="font-size: 14px; font-family: verdana, geneva;">改版的时候更方便&nbsp;只要改css文件。</span></li>
+<li class="p15"><span style="font-family: verdana, geneva; font-size: 14px;">页面加载速度更快、结构化清晰、页面显示简洁。</span></li>
+<li class="p15"><span style="font-family: verdana, geneva; font-size: 14px;">表现与结构相分离。</span></li>
+<li class="p15"><span style="font-size: 14px; font-family: verdana, geneva;">易于优化（seo）搜索引擎更友好，排名更容易靠前。</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>5.a：img的alt与title有何异同？b：strong与em的异同？</strong></span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　a:</span></p>
+<ul>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">alt(alt&nbsp;text):为不能显示图像、窗体或applets的用户代理（UA），alt属性用来指定替换文字。替换文字的语言由lang属性指定。(在IE浏览器下会在没有title时把alt当成&nbsp;tool&nbsp;tip显示)</span></li>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">title(tool&nbsp;tip):该属性为设置该属性的元素提供建议性的信息。</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　b:</span></p>
+<ul>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">strong:粗体强调标签，强调，表示内容的重要性</span></li>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">em:斜体强调标签，更强烈强调，表示内容的强调点</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>6.<span style="line-height: 1.5;">你能描述一下渐进增强和优雅降级之间的不同吗</span><span style="line-height: 1.5;">?</span></strong></span></p>
+<ul>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">渐进增强&nbsp;progressive&nbsp;enhancement：针对低版本浏览器进行构建页面，保证最基本的功能，然后再针对高级浏览器进行效果、交互等改进和追加功能达到更好的用户体验。</span></li>
+<li class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">优雅降级&nbsp;graceful&nbsp;degradation：一开始就构建完整的功能，然后再针对低版本浏览器进行兼容。</span></li>
+
+
+</ul>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">　　区别：优雅降级是从复杂的现状开始，并试图减少用户体验的供给，而渐进增强则是从一个非常基础的，能够起作用的版本开始，并不断扩充，以适应未来环境的需要。降级（功能衰减）意味着往回看；而渐进增强则意味着朝前看，同时保证其根基处于安全地带。　</span></p>
+<p class="p0"><span style="color: #ff00ff; font-family: verdana, geneva; font-size: 14px;">　　“优雅降级”观点</span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">　　“优雅降级”观点认为应该针对那些最高级、最完善的浏览器来设计网站。而将那些被认为“过时”或有功能缺失的浏览器下的测试工作安排在开发周期的最后阶段，并把测试对象限定为主流浏览器（如&nbsp;IE、Mozilla&nbsp;等）的前一个版本。</span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">　　在这种设计范例下，旧版的浏览器被认为仅能提供“简陋却无妨&nbsp;(poor,&nbsp;but&nbsp;passable)”&nbsp;的浏览体验。你可以做一些小的调整来适应某个特定的浏览器。但由于它们并非我们所关注的焦点，因此除了修复较大的错误之外，其它的差异将被直接忽略。</span></p>
+<p class="p0"><span style="color: #ff00ff; font-family: verdana, geneva; font-size: 14px;">　　“渐进增强”观点</span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">　　“渐进增强”观点则认为应关注于内容本身。</span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">　　内容是我们建立网站的诱因。有的网站展示它，有的则收集它，有的寻求，有的操作，还有的网站甚至会包含以上的种种，但相同点是它们全都涉及到内容。这使得“渐进增强”成为一种更为合理的设计范例。这也是它立即被&nbsp;Yahoo!&nbsp;所采纳并用以构建其“分级式浏览器支持&nbsp;(Graded&nbsp;Browser&nbsp;Support)”策略的原因所在。</span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;"><strong>　　那么问题来了。现在产品经理看到IE6,7,8网页效果相对高版本现代浏览器少了很多圆角，阴影（CSS3），要求兼容（使用图片背景，放弃CSS3），你会如何说服他？</strong></span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;"><strong>　　（自由发挥）</strong></span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>7.<span style="line-height: 1.5;">为什么利用多个域名来存储网站资源会更有效？</span></strong></span></p>
+<ul>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">CDN缓存更方便&nbsp;<br></span></li>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">突破浏览器并发限制&nbsp;<br></span></li>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">节约cookie带宽&nbsp;<br></span></li>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">节约主域名的连接数，优化页面响应速度&nbsp;<br></span></li>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">防止不必要的安全问题</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>8.<span style="line-height: 1.5;">请谈一下你对网页标准和标准制定机构重要性的理解。</span></strong></span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　（<span style="color: #ff00ff;">无标准答案</span>）网页标准和标准制定机构都是为了能让web发展的更‘健康’，开发者遵循统一的标准，降低开发难度，开发成本，SEO也会更好做，也不会因为滥用代码导致各种BUG、安全问题，最终提高网站易用性。</span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>9.</strong><strong>请描述一下cookies，sessionStorage和localStorage的区别？</strong>　　</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　sessionStorage用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此sessionStorage不是一种持久化的本地存储，仅仅是会话级别的存储。而localStorage用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;"><strong>　　web&nbsp;storage和cookie的区别</strong></span></p>
+<ul>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">Web&nbsp;Storage的概念和cookie相似，区别是它是为了更大容量存储设计的。Cookie的大小是受限的，并且每次你请求一个新的页面的时候Cookie都会被发送过去，这样无形中浪费了带宽，另外cookie还需要指定作用域，不可以跨域调用。</span></li>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">除此之外，Web&nbsp;Storage拥有setItem,getItem,removeItem,clear等方法，不像cookie需要前端开发者自己封装setCookie，getCookie。但是Cookie也是不可以或缺的：Cookie的作用是与服务器进行交互，作为HTTP规范的一部分而存在&nbsp;，而Web&nbsp;Storage仅仅是为了在本地“存储”数据而生。<br></span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>10.简述一下src与href的区别。</strong></span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　src用于替换当前元素，href用于在当前文档和引用资源之间确立联系。</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　src是source的缩写，指向外部资源的位置，指向的内容将会嵌入到文档中当前标签所在位置；在请求src资源时会将其指向的资源下载并应用到文档内，例如js脚本，img图片和frame等元素。</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　&lt;script&nbsp;src&nbsp;="js.js"&gt;&lt;/script&gt;</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　当浏览器解析到该元素时，会暂停其他资源的下载和处理，直到将该资源加载、编译、执行完毕，图片和框架等元素也如此，类似于将所指向资源嵌入当前标签内。这也是为什么将js脚本放在底部而不是头部。</span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　href是Hypertext&nbsp;Reference的缩写，指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的链接，如果我们在文档中添加</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　&lt;link&nbsp;href="common.css"&nbsp;rel="stylesheet"/&gt;</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　那么浏览器会识别该文档为css文件，就会并行下载资源并且不会停止对当前文档的处理。这也是为什么建议使用link方式来加载css，而不是使用@import方式。</span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>11.知道的网页制作会用到的图片格式有哪些？</strong></span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　png-8，png-24，jpeg，gif，svg。</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　但是上面的那些都不是面试官想要的最后答案。面试官希望听到是<span style="color: #ff00ff;">Webp,Apng</span>。（是否有关注新技术，新鲜事物）</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　科普一下<strong>Webp</strong>：WebP格式，谷歌（google）开发的一种旨在加快图片加载速度的图片格式。图片压缩体积大约只有JPEG的2/3，并能节省大量的服务器带宽资源和数据空间。Facebook Ebay等知名网站已经开始测试并使用WebP格式。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　在质量相同的情况下，<a href="http://baike.baidu.com/view/4447461.htm" target="_blank">WebP</a>格式图像的体积要比JPEG格式图像小40%。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>Apng</strong>：全称是<strong>“Animated Portable Network Graphics”</strong>, 是PNG的位图动画扩展，可以实现png格式的动态图片效果。04年诞生，但一直得不到各大浏览器厂商的支持，直到日前得到 iOS safari 8的支持，有望代替GIF成为下一代动态图标准。</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>12.知道什么是微格式吗？谈谈理解。在前端构建中应该考虑微格式吗？</strong></span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　微格式（Microformats）是一种让机器可读的语义化XHTML词汇的集合，是结构化数据的开放标准。是为特殊应用而制定的特殊格式。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　优点：将智能数据添加到网页上，让网站内容在搜索引擎结果界面可以显示额外的提示。（应用范例：豆瓣，<span style="color: #ff00ff;">有兴趣自行google</span>）</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>13.在css/js代码上线之后开发人员经常会优化性能，从用户刷新网页开始，一次js请求一般情况下有哪些地方会有缓存处理？</strong></span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：dns缓存，cdn缓存，浏览器缓存，服务器缓存。</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>14.一个页面上有大量的图片（大型电商网站），加载很慢，你有哪些方法优化这些图片的加载，给用户更好的体验。</strong></span></p>
+<ul>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">图片懒加载，在页面上的未可视区域可以添加一个滚动条事件，判断图片位置与浏览器顶端的距离与页面的距离，如果前者小于后者，优先加载。</span></li>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">如果为幻灯片、相册等，可以使用图片预加载技术，将当前展示图片的前一张和后一张优先下载。</span></li>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">如果图片为css图片，可以使用CSSsprite，SVGsprite，Iconfont、Base64等技术。</span></li>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">如果图片过大，可以使用特殊编码的图片，加载时会先加载一张压缩的特别厉害的缩略图，以提高用户体验。</span></li>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">如果图片展示区域小于图片的真实大小，则因在服务器端根据业务需要先行进行图片压缩，图片压缩后大小与展示一致。&nbsp;</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">　　<strong>15.你如何理解HTML结构的语义化？</strong><strong>　</strong>　</span></p>
+<ul>
+<li class="p17"><span style="font-family: verdana, geneva; font-size: 14px;">去掉或样式丢失的时候能让页面呈现清晰的结构：</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p17"><span style="font-size: 14px; font-family: verdana, geneva;">html本身是没有表现的，我们看到例如&lt;h1&gt;是粗体，字体大小2em，加粗；&lt;strong&gt;是加粗的，不要认为这是html的表现，这些其实html默认的css样式在起作用，所以去掉或样式丢失的时候能让页面呈现清晰的结构不是语义化的HTML结构的优点，但是浏览器都有有默认样式，默认样式的目的也是为了更好的表达html的语义，可以说浏览器的默认样式和语义化的HTML结构是不可分割的。</span></p>
+<ul>
+<li class="p17"><span style="font-size: 14px; font-family: verdana, geneva;">屏幕阅读器（如果访客有视障）会完全根据你的标记来“读”你的网页.</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p17"><span style="font-size: 14px; font-family: verdana, geneva;">　　例如,如果你使用的含语义的标记,屏幕阅读器就会“逐个拼出”你的单词,而不是试着去对它完整发音.</span></p>
+<ul>
+<li class="p17"><span style="font-size: 14px; font-family: verdana, geneva;">PDA、手机等设备可能无法像普通电脑的浏览器一样来渲染网页（通常是因为这些设备对CSS的支持较弱）<br></span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p17"><span style="font-size: 14px; font-family: verdana, geneva;">　　使用语义标记可以确保这些设备以一种有意义的方式来渲染网页.理想情况下,观看设备的任务是符合设备本身的条件来渲染网页.</span></p>
+<p class="p17"><span style="font-size: 14px; font-family: verdana, geneva;">　　语义标记为设备提供了所需的相关信息,就省去了你自己去考虑所有可能的显示情况（包括现有的或者将来新的设备）.例如,一部手机可以选择使一段标记了标题的文字以粗体显示.而掌上电脑可能会以比较大的字体来显示.无论哪种方式一旦你对文本标记为标题,您就可以确信读取设备将根据其自身的条件来合适地显示页面.</span></p>
+<ul>
+<li class="p17"><span style="font-size: 14px; font-family: verdana, geneva;">搜索引擎的爬虫也依赖于标记来确定上下文和各个关键字的权重</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p17"><span style="font-size: 14px; font-family: verdana, geneva;">　　过去你可能还没有考虑搜索引擎的爬虫也是网站的“访客”,但现在它们他们实际上是极其宝贵的用户.没有他们的话,搜索引擎将无法索引你的网站,然后一般用户将很难过来访问.</span></p>
+<ul>
+<li class="p17"><span style="font-size: 14px; font-family: verdana, geneva;">你的页面是否对爬虫容易理解非常重要,因为爬虫很大程度上会忽略用于表现的标记,而只注重语义标记.</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p17"><span style="font-size: 14px; font-family: verdana, geneva;">　　因此,如果页面文件的标题被标记,而不是,那么这个页面在搜索结果的位置可能会比较靠后.除了提升易用性外,语义标记有利于正确使用CSS和JavaScript,因为其本身提供了许多“钩钩”来应用页面的样式与行为.</span><br><span style="font-size: 14px; font-family: verdana, geneva;">SEO主要还是靠你网站的内容和外部链接的。</span></p>
+<ul>
+<li class="p17"><span style="font-family: verdana, geneva; font-size: 14px;">便于团队开发和维护</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p17"><span style="font-size: 14px; font-family: verdana, geneva;">　　W3C给我们定了一个很好的标准，在团队中大家都遵循这个标准，可以减少很多差异化的东西，方便开发和维护，提高开发效率，甚至<a href="http://www.cssforest.org/blog/index.php?id=134">实现模块化开发</a>。</span></p>
+<p class="p17"><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p class="p17"><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>16.谈谈以前端角度出发做好SEO需要考虑什么？</strong></span></p>
+<ul>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">了解搜索引擎如何抓取网页和如何索引网页</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　你需要知道一些搜索引擎的基本工作原理，各个搜索引擎之间的区别，搜索机器人（SE&nbsp;robot&nbsp;或叫&nbsp;web&nbsp;crawler）如何进行工作，搜索引擎如何对搜索结果进行排序等等。</span></p>
+<ul>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">Meta标签优化</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　主要包括主题（Title)，网站描述(Description)，和关键词（Keywords）。还有一些其它的隐藏文字比如Author（作者），Category（目录），Language（编码语种）等。</span></p>
+<ul>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">如何选取关键词并在网页中放置关键词</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　搜索就得用关键词。关键词分析和选择是SEO最重要的工作之一。首先要给网站确定主关键词（一般在5个上下），然后针对这些关键词进行优化，包括关键词密度（Density），相关度（Relavancy），突出性（Prominency）等等。</span></p>
+<ul>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">了解主要的搜索引擎</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　虽然搜索引擎有很多，但是对网站流量起决定作用的就那么几个。比如英文的主要有Google，Yahoo，Bing等；中文的有百度，搜狗，有道等。不同的搜索引擎对页面的抓取和索引、排序的规则都不一样。还要了解各搜索门户和搜索引擎之间的关系，比如AOL网页搜索用的是Google的搜索技术，MSN用的是Bing的技术。</span></p>
+<ul>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">主要的互联网目录</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　Open&nbsp;Directory自身不是搜索引擎，而是一个大型的网站目录，他和搜索引擎的主要区别是网站内容的收集方式不同。目录是人工编辑的，主要收录网站主页；搜索引擎是自动收集的，除了主页外还抓取大量的内容页面。</span></p>
+<ul>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">按点击付费的搜索引擎</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　搜索引擎也需要生存，随着互联网商务的越来越成熟，收费的搜索引擎也开始大行其道。最典型的有Overture和百度，当然也包括Google的广告项目Google&nbsp;Adwords。越来越多的人通过搜索引擎的点击广告来定位商业网站，这里面也大有优化和排名的学问，你得学会用最少的广告投入获得最多的点击。</span></p>
+<ul>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">搜索引擎登录</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　网站做完了以后，别躺在那里等着客人从天而降。要让别人找到你，最简单的办法就是将网站提交（submit）到搜索引擎。如果你的是商业网站，主要的搜索引擎和目录都会要求你付费来获得收录（比如Yahoo要299美元），但是好消息是（至少到目前为止）最大的搜索引擎Google目前还是免费，而且它主宰着60％以上的搜索市场。</span></p>
+<ul>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">链接交换和链接广泛度（Link&nbsp;Popularity）</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　网页内容都是以超文本（Hypertext）的方式来互相链接的，网站之间也是如此。除了搜索引擎以外，人们也每天通过不同网站之间的链接来Surfing（“冲浪”）。其它网站到你的网站的链接越多，你也就会获得更多的访问量。更重要的是，你的网站的外部链接数越多，会被搜索引擎认为它的重要性越大，从而给你更高的排名。</span></p>
+<ul>
+<li class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">合理的标签使用&nbsp;</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">　</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;"><strong><span style="background-color: #99ccff;">　　Css篇：</span></strong></span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>1.有哪项方式可以对一个DOM设置它的CSS样式？　</strong>　</span></p>
+<ul>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">外部样式表，引入一个外部css文件</span></li>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">内部样式表，将css代码放在&nbsp;&lt;head&gt;&nbsp;标签内部</span></li>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">内联样式，将css样式直接定义在&nbsp;HTML&nbsp;元素内部</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>2.CSS都有哪些选择器？</strong></span></p>
+<ul>
+<li class="p15"><span style="font-size: 14px; font-family: verdana, geneva;">派生选择器（用HTML标签申明）</span></li>
+<li class="p15"><span style="font-size: 14px; font-family: verdana, geneva;">id选择器（用DOM的ID申明）</span></li>
+<li class="p15"><span style="font-size: 14px; font-family: verdana, geneva;">类选择器（用一个样式类名申明）</span></li>
+<li class="p15"><span style="font-size: 14px; font-family: verdana, geneva;">属性选择器（用DOM的属性申明，属于CSS2，IE6不支持，不常用，不知道就算了）</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　除了前3种基本选择器，还有一些扩展选择器，包括</span></p>
+<ul>
+<li class="p15"><span style="font-size: 14px; font-family: verdana, geneva;">后代选择器（利用空格间隔，比如div&nbsp;.a{&nbsp;&nbsp;}）</span></li>
+<li class="p15"><span style="font-family: verdana, geneva; font-size: 14px;">群组选择器（利用逗号间隔，比如p,div,#a{&nbsp;&nbsp;}）　</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　那么问题来了，<strong>CSS选择器的优先级是怎么样定义的？</strong></span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　基本原则：</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　一般而言，选择器越特殊，它的优先级越高。也就是选择器指向的越准确，它的优先级就越高。</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　复杂的计算方法：</span></p>
+<ul>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">用1表示派生选择器的优先级</span></li>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">用10表示类选择器的优先级</span></li>
+<li class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">用100标示ID选择器的优先级</span>
+<ul>
+<li><span style="font-size: 16px;">div.test1&nbsp;.span&nbsp;var&nbsp;优先级&nbsp;1+10&nbsp;+10&nbsp;+1 &nbsp;</span></li>
+<li><span style="font-size: 16px;">span#xxx&nbsp;.songs&nbsp;li&nbsp;优先级1+100&nbsp;+&nbsp;10&nbsp;+&nbsp;1 &nbsp;</span></li>
+<li><span style="font-size: 16px;">#xxx&nbsp;li&nbsp;优先级&nbsp;100&nbsp;+1&nbsp;</span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>那么问题来了，看下列代码，&lt;p&gt;标签内的文字是什么颜色的？。</strong></span></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="font-size: 14px; font-family: verdana, geneva;"><span style="color: #008080;"> 1</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">style</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #008080;"> 2</span> <span style="background-color: #f5f5f5; color: #800000;">.classA</span><span style="background-color: #f5f5f5; color: #000000;">{</span><span style="background-color: #f5f5f5; color: #ff0000;"> color</span><span style="background-color: #f5f5f5; color: #000000;">:</span><span style="background-color: #f5f5f5; color: #0000ff;">blue</span><span style="background-color: #f5f5f5; color: #000000;">;</span><span style="background-color: #f5f5f5; color: #000000;">}</span>
+<span style="color: #008080;"> 3</span> 
+<span style="color: #008080;"> 4</span> <span style="background-color: #f5f5f5; color: #800000;">.classB</span><span style="background-color: #f5f5f5; color: #000000;">{</span><span style="background-color: #f5f5f5; color: #ff0000;"> color</span><span style="background-color: #f5f5f5; color: #000000;">:</span><span style="background-color: #f5f5f5; color: #0000ff;">red</span><span style="background-color: #f5f5f5; color: #000000;">;</span><span style="background-color: #f5f5f5; color: #000000;">}</span>
+<span style="color: #008080;"> 5</span> <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">style</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #008080;"> 6</span> 
+<span style="color: #008080;"> 7</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">body</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #008080;"> 8</span> 
+<span style="color: #008080;"> 9</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">p </span><span style="color: #ff0000;">class</span><span style="color: #0000ff;">='classB </span><span style="color: #ff0000;">classA'</span><span style="color: #0000ff;">&gt;</span> 123 <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">p</span><span style="color: #0000ff;">&gt;</span>
+<span style="color: #008080;">10</span> 
+<span style="color: #008080;">11</span> <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">body</span><span style="color: #0000ff;">&gt;</span></span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：red。与<span style="color: #ff00ff;">样式定义在文件中的先后顺序有关</span>，即是后面的覆盖前面的，与在&lt;p class='classB classA'&gt;中的先后关系无关。&nbsp;</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　3.<strong>CSS中可以通过哪些属性定义，使得一个DOM元素不显示在浏览器可视范围内？</strong>　　</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　最基本的：</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　设置display属性为none，或者设置visibility属性为hidden</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　技巧性：</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　设置宽高为0，设置透明度为0，设置z-index位置在-1000</span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　4.<strong>超链接访问过后hover样式就不出现的问题是什么？如何解决？</strong><br></span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：被点击访问过的超链接样式不在具有hover和active了,解决方法是改变CSS属性的排列顺序:&nbsp;L-V-H-A（link,visited,hover,active）</span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>5.什么是Css Hack？ie6,7,8的hack分别是什么？</strong></span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：针对不同的浏览器写不同的CSS&nbsp;code的过程，就是CSS&nbsp;hack。<br></span></p>
+<p class="p0"><span style="font-size: 14px; font-family: verdana, geneva;">　　示例如下：</span></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="font-size: 14px; font-family: verdana, geneva;"><span style="color: #008080;"> 1</span> <span style="color: #800000;"> #test       </span>{   
+<span style="color: #008080;"> 2</span> <span style="color: #ff0000;">        width</span>:<span style="color: #0000ff;">300px</span>;   
+<span style="color: #008080;"> 3</span> <span style="color: #ff0000;">        height</span>:<span style="color: #0000ff;">300px</span>;   
+<span style="color: #008080;"> 4</span>           
+<span style="color: #008080;"> 5</span> <span style="color: #ff0000;">        background-color</span>:<span style="color: #0000ff;">blue</span>;      <span style="color: #008000;">/*</span><span style="color: #008000;">firefox</span><span style="color: #008000;">*/</span>
+<span style="color: #008080;"> 6</span> <span style="color: #ff0000;">        background-color</span>:<span style="color: #0000ff;">red\9</span>;      <span style="color: #008000;">/*</span><span style="color: #008000;">all ie</span><span style="color: #008000;">*/</span>
+<span style="color: #008080;"> 7</span> <span style="color: #ff0000;">        background-color</span>:<span style="color: #0000ff;">yellow\0</span>;    <span style="color: #008000;">/*</span><span style="color: #008000;">ie8</span><span style="color: #008000;">*/</span>
+<span style="color: #008080;"> 8</span> <span style="color: #ff0000;">        +background-color</span>:<span style="color: #0000ff;">pink</span>;        <span style="color: #008000;">/*</span><span style="color: #008000;">ie7</span><span style="color: #008000;">*/</span>
+<span style="color: #008080;"> 9</span> <span style="color: #ff0000;">        _background-color</span>:<span style="color: #0000ff;">orange</span>;       <span style="color: #008000;">/*</span><span style="color: #008000;">ie6</span><span style="color: #008000;">*/</span>    }  
+<span style="color: #008080;">10</span> <span style="color: #800000;">        :root #test </span>{<span style="color: #ff0000;"> background-color</span>:<span style="color: #0000ff;">purple\9</span>; }  <span style="color: #008000;">/*</span><span style="color: #008000;">ie9</span><span style="color: #008000;">*/</span>
+<span style="color: #008080;">11</span> <span style="color: #800000;">    @media all and (min-width:0px)</span>{<span style="color: #ff0000;"> #test {background-color</span>:<span style="color: #0000ff;">black\0</span>;}<span style="color: #800000;"> }  </span><span style="color: #008000;">/*</span><span style="color: #008000;">opera</span><span style="color: #008000;">*/</span>
+<span style="color: #008080;">12</span> <span style="color: #800000;">    @media screen and (-webkit-min-device-pixel-ratio:0)</span>{<span style="color: #ff0000;"> #test {background-color</span>:<span style="color: #0000ff;">gray</span>;}<span style="color: #800000;"> }       </span><span style="color: #008000;">/*</span><span style="color: #008000;">chrome and safari</span><span style="color: #008000;">*/</span></span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">　　<strong>6.请用Css写一个简单的幻灯片效果页面</strong></span></p>
+<p class="p0"><span style="font-family: verdana, geneva; font-size: 14px;">　　答案：知道是要用css3。使用animation动画实现一个简单的幻灯片效果。</span></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="font-size: 14px; font-family: verdana, geneva;"><span style="color: #008080;"> 1</span>         <span style="color: #008000;">/*</span><span style="color: #008000;">*HTML*</span><span style="color: #008000;">*/</span>
+<span style="color: #008080;"> 2</span> <span style="color: #800000;">        div.ani
+</span><span style="color: #008080;"> 3</span> 
+<span style="color: #008080;"> 4</span>         <span style="color: #008000;">/*</span><span style="color: #008000;">*css*</span><span style="color: #008000;">*/</span>
+<span style="color: #008080;"> 5</span> <span style="color: #800000;">        .ani</span>{
+<span style="color: #008080;"> 6</span> <span style="color: #ff0000;">          width</span>:<span style="color: #0000ff;">480px</span>;
+<span style="color: #008080;"> 7</span> <span style="color: #ff0000;">          height</span>:<span style="color: #0000ff;">320px</span>;
+<span style="color: #008080;"> 8</span> <span style="color: #ff0000;">          margin</span>:<span style="color: #0000ff;">50px auto</span>;
+<span style="color: #008080;"> 9</span> <span style="color: #ff0000;">          overflow</span>:<span style="color: #0000ff;"> hidden</span>;
+<span style="color: #008080;">10</span> <span style="color: #ff0000;">          box-shadow</span>:<span style="color: #0000ff;">0 0 5px rgba(0,0,0,1)</span>;
+<span style="color: #008080;">11</span> <span style="color: #ff0000;">          background-size</span>:<span style="color: #0000ff;"> cover</span>;
+<span style="color: #008080;">12</span> <span style="color: #ff0000;">          background-position</span>:<span style="color: #0000ff;"> center</span>;
+<span style="color: #008080;">13</span> <span style="color: #ff0000;">          -webkit-animation-name</span>:<span style="color: #0000ff;"> "loops"</span>;
+<span style="color: #008080;">14</span> <span style="color: #ff0000;">          -webkit-animation-duration</span>:<span style="color: #0000ff;"> 20s</span>;
+<span style="color: #008080;">15</span> <span style="color: #ff0000;">          -webkit-animation-iteration-count</span>:<span style="color: #0000ff;"> infinite</span>;
+<span style="color: #008080;">16</span>         }
+<span style="color: #008080;">17</span> <span style="color: #800000;">        @-webkit-keyframes "loops" </span>{
+<span style="color: #008080;">18</span> <span style="color: #ff0000;">            0% {
+</span><span style="color: #008080;">19</span> <span style="color: #ff0000;">                background</span>:<span style="color: #0000ff;">url(http://d.hiphotos.baidu.com/image/w%3D400/sign=c01e6adca964034f0fcdc3069fc27980/e824b899a9014c08e5e38ca4087b02087af4f4d3.jpg) no-repeat</span>;             
+<span style="color: #008080;">20</span>             }
+<span style="color: #008080;">21</span> <span style="color: #800000;">            25% </span>{
+<span style="color: #008080;">22</span> <span style="color: #ff0000;">                background</span>:<span style="color: #0000ff;">url(http://b.hiphotos.baidu.com/image/w%3D400/sign=edee1572e9f81a4c2632edc9e72b6029/30adcbef76094b364d72bceba1cc7cd98c109dd0.jpg) no-repeat</span>;
+<span style="color: #008080;">23</span>             }
+<span style="color: #008080;">24</span> <span style="color: #800000;">            50% </span>{
+<span style="color: #008080;">25</span> <span style="color: #ff0000;">                background</span>:<span style="color: #0000ff;">url(http://b.hiphotos.baidu.com/image/w%3D400/sign=937dace2552c11dfded1be2353266255/d8f9d72a6059252d258e7605369b033b5bb5b912.jpg) no-repeat</span>;
+<span style="color: #008080;">26</span>             }
+<span style="color: #008080;">27</span> <span style="color: #800000;">            75% </span>{
+<span style="color: #008080;">28</span> <span style="color: #ff0000;">                background</span>:<span style="color: #0000ff;">url(http://g.hiphotos.baidu.com/image/w%3D400/sign=7d37500b8544ebf86d71653fe9f9d736/0df431adcbef76095d61f0972cdda3cc7cd99e4b.jpg) no-repeat</span>;
+<span style="color: #008080;">29</span>             }
+<span style="color: #008080;">30</span> <span style="color: #800000;">            100% </span>{
+<span style="color: #008080;">31</span> <span style="color: #ff0000;">                background</span>:<span style="color: #0000ff;">url(http://c.hiphotos.baidu.com/image/w%3D400/sign=cfb239ceb0fb43161a1f7b7a10a54642/3b87e950352ac65ce2e73f76f9f2b21192138ad1.jpg) no-repeat</span>;
+<span style="color: #008080;">32</span>             }
+<span style="color: #008080;">33</span> <span style="color: #800000;">        }</span></span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>7.行内元素和块级元素的具体区别是什么？行内元素的padding和margin可设置吗？</strong></span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;"><strong>　　块级元素(block)特性：</strong></span></p>
+<ul>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">总是独占一行，表现为另起一行开始，而且其后的元素也必须另起一行显示;</span></li>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">宽度(width)、高度(height)、内边距(padding)和外边距(margin)都可控制;</span></li>
+</ul>
+<div><span style="font-size: 14px; font-family: verdana, geneva;"><strong>　　内联元素(inline)特性：</strong></span></div>
+<div>
+<ul>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">和相邻的内联元素在同一行;</span></li>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">宽度(width)、高度(height)、内边距的top/bottom(padding-top/padding-bottom)和外边距的top/bottom(margin-top/margin-bottom)都不可改变（<span style="color: #ff00ff;">也就是padding和margin的left和right是可以设置的</span>），就是里面文字或图片的大小。</span></li>
+</ul>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　那么问题来了，<strong>浏览器还有默认的天生inline-block元素（<span style="color: #ff00ff;">拥有内在尺寸，可设置高宽，但不会自动换行</span>），有哪些</strong>？</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：&lt;input&gt; 、&lt;img&gt; 、&lt;button&gt; 、&lt;textarea&gt; 、&lt;label&gt;。</span></p>
+</div>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>8.什么是外边距重叠？重叠的结果是什么？</strong></span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　外边距重叠就是margin-collapse。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　在CSS当中，相邻的两个盒子（可能是兄弟关系也可能是祖先关系）的外边距可以结合成一个单独的外边距。这种合并外边距的方式被称为折叠，并且因而所结合成的外边距称为折叠外边距。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　折叠结果遵循下列计算规则：</span></p>
+<ol>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">两个相邻的外边距都是正数时，折叠结果是它们两者之间<span style="color: #ff00ff;">较大的值</span>。</span></li>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">两个相邻的外边距都是负数时，折叠结果是两者<span style="color: #ff00ff;">绝对值的较大值</span>。</span></li>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">两个外边距一正一负时，折叠结果是两者的<span style="color: #ff00ff;">相加的和</span>。</span></li>
+</ol>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>9.rgba()和opacity的透明效果有什么不同？</strong></span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　rgba()和opacity都能实现透明效果，但最大的不同是opacity作用于元素，以及元素内的所有内容的透明度，</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　而rgba()只作用于元素的颜色或其背景色。（<span style="color: #ff00ff;">设置rgba透明的元素的子元素不会继承透明效果！</span>）</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>10.css中可以让文字在垂直和水平方向上重叠的两个属性是什么？</strong></span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　垂直方向：line-height</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　水平方向：letter-spacing</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>那么问题来了，关于letter-spacing的妙用知道有哪些么？</strong></span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　答案:可以用于消除inline-block元素间的换行符空格间隙问题。</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>11.如何垂直居中一个浮动元素？</strong></span></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="font-size: 14px; font-family: verdana, geneva;"><span style="color: #008080;"> 1</span> <span style="color: #800000;">// 方法一：已知元素的高宽
+</span><span style="color: #008080;"> 2</span> 
+<span style="color: #008080;"> 3</span> <span style="color: #800000;">#div1</span>{
+<span style="color: #008080;"> 4</span> <span style="color: #ff0000;">    background-color</span>:<span style="color: #0000ff;">#6699FF</span>;
+<span style="color: #008080;"> 5</span> <span style="color: #ff0000;">    width</span>:<span style="color: #0000ff;">200px</span>;
+<span style="color: #008080;"> 6</span> <span style="color: #ff0000;">    height</span>:<span style="color: #0000ff;">200px</span>;
+<span style="color: #008080;"> 7</span> 
+<span style="color: #008080;"> 8</span> <span style="color: #ff0000;">    position</span>:<span style="color: #0000ff;"> absolute</span>;<span style="color: #ff0000;">        //父元素需要相对定位
+</span><span style="color: #008080;"> 9</span> <span style="color: #ff0000;">    top</span>:<span style="color: #0000ff;"> 50%</span>;
+<span style="color: #008080;">10</span> <span style="color: #ff0000;">    left</span>:<span style="color: #0000ff;"> 50%</span>;
+<span style="color: #008080;">11</span> <span style="color: #ff0000;">    margin-top</span>:<span style="color: #0000ff;">-100px </span>;<span style="color: #ff0000;">   //二分之一的height，width
+</span><span style="color: #008080;">12</span> <span style="color: #ff0000;">    margin-left</span>:<span style="color: #0000ff;"> -100px</span>;
+<span style="color: #008080;">13</span>     }
+<span style="color: #008080;">14</span> 
+<span style="color: #008080;">15</span> <span style="color: #800000;">//方法二:
+</span><span style="color: #008080;">16</span> 
+<span style="color: #008080;">17</span> <span style="color: #800000;">  #div1</span>{
+<span style="color: #008080;">18</span> <span style="color: #ff0000;">    width</span>:<span style="color: #0000ff;"> 200px</span>;
+<span style="color: #008080;">19</span> <span style="color: #ff0000;">    height</span>:<span style="color: #0000ff;"> 200px</span>;
+<span style="color: #008080;">20</span> <span style="color: #ff0000;">    background-color</span>:<span style="color: #0000ff;"> #6699FF</span>;
+<span style="color: #008080;">21</span> 
+<span style="color: #008080;">22</span> <span style="color: #ff0000;">    margin</span>:<span style="color: #0000ff;">auto</span>;
+<span style="color: #008080;">23</span> <span style="color: #ff0000;">    position</span>:<span style="color: #0000ff;"> absolute</span>;<span style="color: #ff0000;">        //父元素需要相对定位
+</span><span style="color: #008080;">24</span> <span style="color: #ff0000;">    left</span>:<span style="color: #0000ff;"> 0</span>;
+<span style="color: #008080;">25</span> <span style="color: #ff0000;">    top</span>:<span style="color: #0000ff;"> 0</span>;
+<span style="color: #008080;">26</span> <span style="color: #ff0000;">    right</span>:<span style="color: #0000ff;"> 0</span>;
+<span style="color: #008080;">27</span> <span style="color: #ff0000;">    bottom</span>:<span style="color: #0000ff;"> 0</span>;
+<span style="color: #008080;">28</span>     }</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">&nbsp;　　<strong>那么问题来了，如何垂直居中一个&lt;img&gt;?</strong>（<span style="color: #ff00ff;">用更简便的方法。</span>）</span></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="font-family: verdana, geneva; font-size: 14px;"><span style="color: #008080;">1</span> <span style="color: #800000;">#container     //&lt;img&gt;的容器设置如下
+</span><span style="color: #008080;">2</span> {
+<span style="color: #008080;">3</span> <span style="color: #ff0000;">    display</span>:<span style="color: #0000ff;">table-cell</span>;
+<span style="color: #008080;">4</span> <span style="color: #ff0000;">    text-align</span>:<span style="color: #0000ff;">center</span>;
+<span style="color: #008080;">5</span> <span style="color: #ff0000;">    vertical-align</span>:<span style="color: #0000ff;">middle</span>;
+<span style="color: #008080;">6</span> }</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>12.px和em的区别。</strong></span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　px和em都是长度单位，区别是，px的值是固定的，指定是多少就是多少，计算比较容易。em得值不是固定的，并且em会继承父级元素的字体大小。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　浏览器的默认字体高都是16px。所以未经调整的浏览器都符合: 1em=16px。那么12px=0.75em, 10px=0.625em。</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;"><strong>　　13.描述一个"reset"的CSS文件并如何使用它。知道<code>normalize.css</code>吗？你了解他们的不同之处？</strong>　</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　重置样式非常多，凡是一个前端开发人员肯定有一个常用的重置CSS文件并知道如何使用它们。他们是盲目的在做还是知道为什么这么做呢？原因是不同的浏览器对一些元素有不同的默认样式，如果你不处理，在不同的浏览器下会存在必要的风险，或者更有戏剧性的性发生。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　你可能会用<a href="http://necolas.github.io/normalize.css/" target="_blank">Normalize</a>来代替你的重置样式文件。它没有重置所有的样式风格，但仅提供了一套合理的默认样式值。既能让众多浏览器达到一致和合理，但又不扰乱其他的东西（如粗体的标题）。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　在这一方面，无法做每一个复位重置。它也确实有些超过一个重置，它处理了你永远都不用考虑的怪癖，像HTML的<code>audio</code>元素不一致或<code>line-height</code>不一致。</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">　　<strong>14.</strong><strong>Sass、LESS是什么？大家为什么要使用他们？</strong></span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　他们是CSS预处理器。他是CSS上的一种抽象层。他们是一种特殊的语法/语言编译成CSS。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　例如<a href="http://www.lesscss.org/" target="_blank">Less</a>是一种动态样式语言. 将CSS赋予了动态语言的特性，如变量，继承，运算， 函数. LESS 既可以在客户端上运行 (支持IE 6+, Webkit, Firefox)，也可一在服务端运行 (借助 Node.js)。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　为什么要使用它们？</span></p>
+<ul>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">结构清晰，便于扩展。</span></li>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">可以方便地屏蔽浏览器私有语法差异。这个不用多说，封装对浏览器语法差异的重复处理，减少无意义的机械劳动。</span></li>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">可以轻松实现多重继承。</span></li>
+<li><span style="font-size: 14px; font-family: verdana, geneva;">完全兼容 CSS 代码，可以方便地应用到老项目中。LESS 只是在 CSS 语法上做了扩展，所以老的 CSS 代码也可以与 LESS 代码一同编译。</span></li>
+</ul>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　<strong>15.display:none与visibility:hidden的区别是什么？</strong></span></p>
+<ul>
+<li><span style="font-size: 14px; font-family: verdana, geneva;"><strong><strong>display&nbsp;</strong>:&nbsp;</strong>隐藏对应的元素但不挤占该元素原来的空间。</span></li>
+<li><span style="font-size: 14px; font-family: verdana, geneva;"><strong><strong>visibility</strong>:&nbsp;</strong>隐藏对应的元素并且挤占该元素原来的空间。</span></li>
+</ul>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">&nbsp;　　即是，使用CSS display:none属性后，HTML元素（对象）的宽度、高度等各种属性值都将“丢失”;而使用visibility:hidden属性后，HTML元素（对象）仅仅是在视觉上看不见（完全透明），而它所占据的空间位置仍然存在。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　</span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;"><strong>　　16.知道css有个content属性吗？有什么作用？有什么应用？</strong></span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　知道。css的content属性专门应用在 before/after 伪元素上，用于来插入生成内容。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　最常见的应用是利用伪类清除浮动。</span></p>
+<div class="cnblogs_code"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="font-size: 14px; font-family: verdana, geneva;"><span style="color: #008080;"> 1</span> <span style="color: #800000;">//一种常见利用伪类清除浮动的代码
+</span><span style="color: #008080;"> 2</span> <span style="color: #800000;"> .clearfix:after </span>{
+<span style="color: #008080;"> 3</span> <span style="color: #ff0000;">    content</span>:<span style="color: #0000ff;">"."</span>;<span style="color: #ff0000;">       //这里利用到了content属性
+</span><span style="color: #008080;"> 4</span> <span style="color: #ff0000;">    display</span>:<span style="color: #0000ff;">block</span>; 
+<span style="color: #008080;"> 5</span> <span style="color: #ff0000;">    height</span>:<span style="color: #0000ff;">0</span>;
+<span style="color: #008080;"> 6</span> <span style="color: #ff0000;">    visibility</span>:<span style="color: #0000ff;">hidden</span>; 
+<span style="color: #008080;"> 7</span> <span style="color: #ff0000;">    clear</span>:<span style="color: #0000ff;">both</span>; }
+<span style="color: #008080;"> 8</span> 
+<span style="color: #008080;"> 9</span> <span style="color: #800000;">.clearfix </span>{ 
+<span style="color: #008080;">10</span> <span style="color: #ff0000;">    *zoom</span>:<span style="color: #0000ff;">1</span>; 
+<span style="color: #008080;">11</span> }</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　after伪元素通过 content 在元素的后面生成了内容为一个点的块级元素，再利用clear:both清除浮动。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　那么问题继续还有，<strong>知道css计数器（<span style="color: #ff00ff;">序列数字字符自动递增</span>）吗？如何通过css content属性实现css计数器？</strong></span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　答案：css计数器是通过设置counter-reset 、counter-increment 两个属性 、及 counter()/counters()一个方法配合after / before 伪类实现。&nbsp;</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　具体实现方案：请戳张鑫旭大大的博文<span style="color: #3366ff;"><span style="color: #3366ff;"><a href="http://www.zhangxinxu.com/wordpress/?p=4303" target="_blank">CSS计数器(序列数字字符自动递增)详解</a><span style="color: #000000;">&nbsp;。</span></span></span></span></p>
+<p><span style="font-family: verdana, geneva; font-size: 14px;">&nbsp;</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　觉得题目还ok的亲点个推荐哦，题量会不断增加。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　你可能会感兴趣：<span style="color: #3366ff;"><a id="cb_post_title_url" class="postTitle2" href="http://www.cnblogs.com/coco1s/p/4029708.html"><span style="color: #3366ff;">BAT及各大互联网公司2014前端笔试面试题--JavaScript篇</span></a></span>。</span></p>
+<p><span style="font-size: 14px; font-family: verdana, geneva;">　　暂且贴出我做出答案的部分。有时间把未做出答案也贴出来。针对文中各题，如有更好的解决方法或者错误之处，各位亲务必告知我，误人子弟实乃罪过。</span></p><div class="m-reward"><div class="m-desc">如果觉得文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div><div class="reward-btn">打赏支持</div></div><div class="reward-wrap"><div class="reward-btn-close">+</div><h2>(^_^)打个赏喝个咖啡(^_^)</h2><div class="wechat"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/o_weixin.png" alt="微信支付"></div><div class="zhifubao"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/o_zhifubao.png" alt="支付宝支付"></div>	</div></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="BlogPostCategory">分类: <a href="https://www.cnblogs.com/coco1s/category/831730.html" target="_blank">面试笔试</a></div>
+<div id="EntryTag">标签: <a href="https://www.cnblogs.com/coco1s/tag/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%A2%98/">前端面试题</a>, <a href="https://www.cnblogs.com/coco1s/tag/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AF%95%E9%A2%98/">前端笔试题</a>, <a href="https://www.cnblogs.com/coco1s/tag/%E5%89%8D%E7%AB%AF%E8%AF%95%E9%A2%98/">前端试题</a>, <a href="https://www.cnblogs.com/coco1s/tag/HTML%E7%AC%94%E8%AF%95%E9%A2%98/">HTML笔试题</a>, <a href="https://www.cnblogs.com/coco1s/tag/CSS%E7%AC%94%E8%AF%95%E9%A2%98/">CSS笔试题</a></div>
+<div id="blog_post_info"><div id="green_channel">
+        <a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(4034937,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+            <a id="green_channel_follow" onclick="follow(&#39;97b0660a-69a1-e311-8d02-90b11c0b17d6&#39;);" href="javascript:void(0);">关注我</a>
+    <a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a>
+    <a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/icon_weibo_24.png" alt=""></a>
+    <a id="green_channel_wechat" href="javascript:void(0);" title="分享至微信" onclick="shareOnWechat()"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/wechat.png" alt=""></a>
+</div>
+<div id="author_profile">
+    <div id="author_profile_info" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/coco1s/" target="_blank"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/20160411131806.png" class="author_avatar" alt=""></a>
+        <div id="author_profile_detail" class="author_profile_info">
+            <a href="http://home.cnblogs.com/u/coco1s/">ChokCoco</a><br>
+            <a href="http://home.cnblogs.com/u/coco1s/followees">关注 - 53</a><br>
+            <a href="http://home.cnblogs.com/u/coco1s/followers">粉丝 - 3720</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="author_profile_honor">荣誉：<a href="http://www.cnblogs.com/expert/" target="_blank">推荐博客</a></div>
+    <div id="author_profile_follow">
+                <a href="javascript:void(0);" onclick="follow(&#39;97b0660a-69a1-e311-8d02-90b11c0b17d6&#39;);return false;">+加关注</a>
+    </div>
+</div>
+<div id="div_digg">
+    <div class="diggit" onclick="votePost(4034937,&#39;Digg&#39;)">
+        <span class="diggnum" id="digg_count">89</span>
+    </div>
+    <div class="buryit" onclick="votePost(4034937,&#39;Bury&#39;)">
+        <span class="burynum" id="bury_count">0</span>
+    </div>
+    <div class="clear"></div>
+    <div class="diggword" id="digg_tips">
+    </div>
+</div>
+<script type="text/javascript">
+    currentDiggType = 0;
+</script></div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="https://www.cnblogs.com/coco1s/p/4029708.html" class="p_n_p_prefix">« </a> 上一篇：<a href="https://www.cnblogs.com/coco1s/p/4029708.html" title="发布于2014-10-16 22:10">BAT及各大互联网公司2014前端笔试面试题--JavaScript篇</a><br><a href="https://www.cnblogs.com/coco1s/p/4040108.html" class="p_n_p_prefix">» </a> 下一篇：<a href="https://www.cnblogs.com/coco1s/p/4040108.html" title="发布于2014-10-21 13:23">Web前端框架与类库的思考</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2014-10-19 17:13</span> <a href="https://www.cnblogs.com/coco1s/">ChokCoco</a> 阅读(<span id="post_view_count">31844</span>) 评论(<span id="post_comment_count">32</span>)  <a href="https://i.cnblogs.com/EditPosts.aspx?postid=4034937" rel="nofollow">编辑</a> <a href="http://www.cnblogs.com/coco1s/p/4034937.html#" onclick="AddToWz(4034937);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,cb_blogId=177636,cb_entryId=4034937,cb_blogApp=currentBlogApp,cb_blogUserGuid='97b0660a-69a1-e311-8d02-90b11c0b17d6',cb_entryCreatedDate='2014/10/19 17:13:00';loadViewCount(cb_entryId);var cb_postType=1;var isMarkdown=false;</script>
+	
+</div><!--end: topics 文章、评论容器-->
+</div><a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<br>
+<div class="feedback_area_title">评论列表</div>
+<div class="feedbackNoItems"></div>	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3046770" class="layer">#1楼</a><a name="3046770" id="comment_anchor_3046770"></a>  <span class="comment_date">2014-10-19 17:28</span> <a id="a_comment_author_3046770" href="http://home.cnblogs.com/u/682742/" target="_blank">墨迹羽</a> <a href="http://msg.cnblogs.com/send/%E5%A2%A8%E8%BF%B9%E7%BE%BD" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3046770" class="blog_comment_body">js的问的会深一点</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3046770,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3046770,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3046936" class="layer">#2楼</a><a name="3046936" id="comment_anchor_3046936"></a>  <span class="comment_date">2014-10-20 09:03</span> <a id="a_comment_author_3046936" href="http://home.cnblogs.com/u/523419/" target="_blank">Boring_Days</a> <a href="http://msg.cnblogs.com/send/Boring_Days" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3046936" class="blog_comment_body">opera改回用presto放弃blink了么？</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3046936,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3046936,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3046939" class="layer">#3楼</a><a name="3046939" id="comment_anchor_3046939"></a>  <span class="comment_date">2014-10-20 09:06</span> <a id="a_comment_author_3046939" href="https://www.cnblogs.com/sankeyou/" target="_blank">散客游</a> <a href="http://msg.cnblogs.com/send/%E6%95%A3%E5%AE%A2%E6%B8%B8" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3046939" class="blog_comment_body">什么是"垂直居然"</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3046939,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3046939,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3046939_avatar" style="display:none;">http://pic.cnblogs.com/face/u154535.jpg</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3046986" class="layer">#4楼</a><a name="3046986" id="comment_anchor_3046986"></a>  <span class="comment_date">2014-10-20 09:45</span> <a id="a_comment_author_3046986" href="https://www.cnblogs.com/tonyjude/" target="_blank">不曾流泪的鱼</a> <a href="http://msg.cnblogs.com/send/%E4%B8%8D%E6%9B%BE%E6%B5%81%E6%B3%AA%E7%9A%84%E9%B1%BC" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3046986" class="blog_comment_body">那么问题来了</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3046986,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3046986,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3046995" class="layer">#5楼</a><a name="3046995" id="comment_anchor_3046995"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2014-10-20 09:50</span> <a id="a_comment_author_3046995" href="https://www.cnblogs.com/coco1s/" target="_blank">ChokCoco</a> <a href="http://msg.cnblogs.com/send/ChokCoco" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3046995" class="blog_comment_body"><a href="http://www.cnblogs.com/coco1s/p/4034937.html#3046939" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3046939);">@</a>
+散客游<br>笔误，是垂直居中。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3046995,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3046995,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3046995_avatar" style="display:none;">http://pic.cnblogs.com/face/608782/20160411131806.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047012" class="layer">#6楼</a><a name="3047012" id="comment_anchor_3047012"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2014-10-20 09:59</span> <a id="a_comment_author_3047012" href="https://www.cnblogs.com/coco1s/" target="_blank">ChokCoco</a> <a href="http://msg.cnblogs.com/send/ChokCoco" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3047012" class="blog_comment_body"><a href="http://www.cnblogs.com/coco1s/p/4034937.html#3046936" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3046936);">@</a>
+Boring_Days<br>感谢指出，我查证了一下，opera确实是改用了blink。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3047012,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3047012,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3047012_avatar" style="display:none;">http://pic.cnblogs.com/face/608782/20160411131806.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047020" class="layer">#7楼</a><a name="3047020" id="comment_anchor_3047020"></a>  <span class="comment_date">2014-10-20 10:08</span> <a id="a_comment_author_3047020" href="https://www.cnblogs.com/diligenceday/" target="_blank">方方和圆圆</a> <a href="http://msg.cnblogs.com/send/%E6%96%B9%E6%96%B9%E5%92%8C%E5%9C%86%E5%9C%86" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3047020" class="blog_comment_body">已崩溃，幸好基础还行，都知道怎么回事，但是好多都没试过。。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3047020,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3047020,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3047020_avatar" style="display:none;">http://pic.cnblogs.com/face/497865/20150117172039.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047029" class="layer">#8楼</a><a name="3047029" id="comment_anchor_3047029"></a>  <span class="comment_date">2014-10-20 10:13</span> <a id="a_comment_author_3047029" href="http://home.cnblogs.com/u/200241/" target="_blank">chengkuan</a> <a href="http://msg.cnblogs.com/send/chengkuan" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3047029" class="blog_comment_body"><a href="http://www.cnblogs.com/coco1s/p/4034937.html#3046939" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3046939);">@</a>
+散客游<br><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/coco1s/p/4034937.html#3046939" title="查看引用原文">引用</a></legend>什么是"垂直居然"</fieldset><br>是剧中吧，楼主写错了</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3047029,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3047029,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047031" class="layer">#9楼</a><a name="3047031" id="comment_anchor_3047031"></a>  <span class="comment_date">2014-10-20 10:14</span> <a id="a_comment_author_3047031" href="http://home.cnblogs.com/u/200241/" target="_blank">chengkuan</a> <a href="http://msg.cnblogs.com/send/chengkuan" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3047031" class="blog_comment_body">有些知识面，涉及的比较深入，哎，不经常搞这个，也就忘了。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3047031,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3047031,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047044" class="layer">#10楼</a><a name="3047044" id="comment_anchor_3047044"></a>  <span class="comment_date">2014-10-20 10:25</span> <a id="a_comment_author_3047044" href="https://www.cnblogs.com/MuYiNet/" target="_blank">木源</a> <a href="http://msg.cnblogs.com/send/%E6%9C%A8%E6%BA%90" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3047044" class="blog_comment_body">不错</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3047044,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3047044,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047094" class="layer">#11楼</a><a name="3047094" id="comment_anchor_3047094"></a>  <span class="comment_date">2014-10-20 11:13</span> <a id="a_comment_author_3047094" href="https://www.cnblogs.com/oniceriver/" target="_blank">oniceriver</a> <a href="http://msg.cnblogs.com/send/oniceriver" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3047094" class="blog_comment_body">最后一个display:none和visibility:hidden的介绍写反了吧,display是不占空间的</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3047094,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3047094,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047095" class="layer">#12楼</a><a name="3047095" id="comment_anchor_3047095"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2014-10-20 11:15</span> <a id="a_comment_author_3047095" href="https://www.cnblogs.com/coco1s/" target="_blank">ChokCoco</a> <a href="http://msg.cnblogs.com/send/ChokCoco" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3047095" class="blog_comment_body"><a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047094" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3047094);">@</a>
+oniceriver<br>啊。果然是写反了，多谢提出，已改正！</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3047095,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3047095,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3047095_avatar" style="display:none;">http://pic.cnblogs.com/face/608782/20160411131806.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047110" class="layer">#13楼</a><a name="3047110" id="comment_anchor_3047110"></a>  <span class="comment_date">2014-10-20 11:28</span> <a id="a_comment_author_3047110" href="https://www.cnblogs.com/ohmygirl/" target="_blank">ohmygirl</a> <a href="http://msg.cnblogs.com/send/ohmygirl" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3047110" class="blog_comment_body">经常切页面的表示，很多CSS的东西还是没完全记住。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3047110,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3047110,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3047110_avatar" style="display:none;">http://pic.cnblogs.com/face/679164/20141008182127.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047138" class="layer">#14楼</a><a name="3047138" id="comment_anchor_3047138"></a>  <span class="comment_date">2014-10-20 11:56</span> <a id="a_comment_author_3047138" href="https://www.cnblogs.com/Jolinson/" target="_blank">Aidou_dream</a> <a href="http://msg.cnblogs.com/send/Aidou_dream" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3047138" class="blog_comment_body">赞</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3047138,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3047138,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3047138_avatar" style="display:none;">http://pic.cnblogs.com/face/449222/20130828115638.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047139" class="layer">#15楼</a><a name="3047139" id="comment_anchor_3047139"></a>  <span class="comment_date">2014-10-20 11:56</span> <a id="a_comment_author_3047139" href="https://www.cnblogs.com/diligenceday/" target="_blank">方方和圆圆</a> <a href="http://msg.cnblogs.com/send/%E6%96%B9%E6%96%B9%E5%92%8C%E5%9C%86%E5%9C%86" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3047139" class="blog_comment_body">全是干货么么哒</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3047139,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3047139,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3047139_avatar" style="display:none;">http://pic.cnblogs.com/face/497865/20150117172039.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047144" class="layer">#16楼</a><a name="3047144" id="comment_anchor_3047144"></a>  <span class="comment_date">2014-10-20 12:03</span> <a id="a_comment_author_3047144" href="https://www.cnblogs.com/JoeStone/" target="_blank">木乃伊</a> <a href="http://msg.cnblogs.com/send/%E6%9C%A8%E4%B9%83%E4%BC%8A" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3047144" class="blog_comment_body">这么说，我可以去BAT应聘前端了啊。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3047144,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3047144,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3047144_avatar" style="display:none;">http://pic.cnblogs.com/face/59126/20180528161713.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047392" class="layer">#17楼</a><a name="3047392" id="comment_anchor_3047392"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2014-10-20 16:31</span> <a id="a_comment_author_3047392" href="https://www.cnblogs.com/coco1s/" target="_blank">ChokCoco</a> <a href="http://msg.cnblogs.com/send/ChokCoco" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3047392" class="blog_comment_body"><a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047144" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3047144);">@</a>
+木乃伊<br>这些都是笔试题 或者 面试前菜。往往面试官会深入这些题目探讨更深层数或者底层的实现。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3047392,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3047392,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3047392_avatar" style="display:none;">http://pic.cnblogs.com/face/608782/20160411131806.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047933" class="layer">#18楼</a><a name="3047933" id="comment_anchor_3047933"></a>  <span class="comment_date">2014-10-21 13:46</span> <a id="a_comment_author_3047933" href="https://www.cnblogs.com/LinFx/" target="_blank">一强悍的抽屉一</a> <a href="http://msg.cnblogs.com/send/%E4%B8%80%E5%BC%BA%E6%82%8D%E7%9A%84%E6%8A%BD%E5%B1%89%E4%B8%80" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3047933" class="blog_comment_body">mark</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3047933,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3047933,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3048520" class="layer">#19楼</a><a name="3048520" id="comment_anchor_3048520"></a>  <span class="comment_date">2014-10-22 09:51</span> <a id="a_comment_author_3048520" href="https://www.cnblogs.com/newton/" target="_blank">莱布尼茨</a> <a href="http://msg.cnblogs.com/send/%E8%8E%B1%E5%B8%83%E5%B0%BC%E8%8C%A8" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3048520" class="blog_comment_body">折腾人的前端</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3048520,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3048520,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3048520_avatar" style="display:none;">http://pic.cnblogs.com/face/474041/20130222025701.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3053297" class="layer">#20楼</a><a name="3053297" id="comment_anchor_3053297"></a>  <span class="comment_date">2014-10-29 11:49</span> <a id="a_comment_author_3053297" href="https://www.cnblogs.com/leeten/" target="_blank">李腾</a> <a href="http://msg.cnblogs.com/send/%E6%9D%8E%E8%85%BE" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3053297" class="blog_comment_body">mark!</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3053297,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3053297,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3053297_avatar" style="display:none;">http://pic.cnblogs.com/face/578349/20140104231552.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3105393" class="layer">#21楼</a><a name="3105393" id="comment_anchor_3105393"></a>  <span class="comment_date">2015-01-12 17:21</span> <a id="a_comment_author_3105393" href="https://www.cnblogs.com/simonhe/" target="_blank">Simon_He</a> <a href="http://msg.cnblogs.com/send/Simon_He" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3105393" class="blog_comment_body">mark  希望楼主继续总结~~</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3105393,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3105393,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3105393_avatar" style="display:none;">http://pic.cnblogs.com/face/698943/20141231210406.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3153570" class="layer">#22楼</a><a name="3153570" id="comment_anchor_3153570"></a>  <span class="comment_date">2015-03-31 17:13</span> <a id="a_comment_author_3153570" href="https://www.cnblogs.com/lyanm/" target="_blank">小小冷</a> <a href="http://msg.cnblogs.com/send/%E5%B0%8F%E5%B0%8F%E5%86%B7" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3153570" class="blog_comment_body">mark</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3153570,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3153570,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3153570_avatar" style="display:none;">http://pic.cnblogs.com/face/u304425.jpg?id=29012854</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3160072" class="layer">#23楼</a><a name="3160072" id="comment_anchor_3160072"></a>  <span class="comment_date">2015-04-10 15:46</span> <a id="a_comment_author_3160072" href="https://www.cnblogs.com/chejiang/" target="_blank">阿飞的小蝴蝶.</a> <a href="http://msg.cnblogs.com/send/%E9%98%BF%E9%A3%9E%E7%9A%84%E5%B0%8F%E8%9D%B4%E8%9D%B6." title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3160072" class="blog_comment_body"><a href="http://www.cnblogs.com/coco1s/p/4034937.html#3047094" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3047094);">@</a>
+oniceriver<br>我想面试者不单单只想听到这个答案吧。<br>display和visibility还有两个明显的区别就是父元素设置了diplay后代统统被干掉隐藏了，visibility后代能设置visible来显身。 display会导致repain、reflow的问题，visibility没这问题了</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3160072,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3160072,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3160079" class="layer">#24楼</a><a name="3160079" id="comment_anchor_3160079"></a>  <span class="comment_date">2015-04-10 15:51</span> <a id="a_comment_author_3160079" href="https://www.cnblogs.com/chejiang/" target="_blank">阿飞的小蝴蝶.</a> <a href="http://msg.cnblogs.com/send/%E9%98%BF%E9%A3%9E%E7%9A%84%E5%B0%8F%E8%9D%B4%E8%9D%B6." title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3160079" class="blog_comment_body"><a href="http://www.cnblogs.com/coco1s/p/4034937.html#3046995" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3046995);">@</a>
+ChokCoco<br>关于居中，那么问题来了若是不知道width和height该咋办？莫急，还有css3(transform-translate:-50% -50%;)</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3160079,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3160079,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3263634" class="layer">#25楼</a><a name="3263634" id="comment_anchor_3263634"></a>  <span class="comment_date">2015-09-09 22:27</span> <a id="a_comment_author_3263634" href="http://home.cnblogs.com/u/790406/" target="_blank">咖喱吧</a> <a href="http://msg.cnblogs.com/send/%E5%92%96%E5%96%B1%E5%90%A7" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3263634" class="blog_comment_body">不错的总结。辛苦啦</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3263634,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3263634,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3274070" class="layer">#26楼</a><a name="3274070" id="comment_anchor_3274070"></a>  <span class="comment_date">2015-09-25 08:51</span> <a id="a_comment_author_3274070" href="https://www.cnblogs.com/laozuan/" target="_blank">钻葛格</a> <a href="http://msg.cnblogs.com/send/%E9%92%BB%E8%91%9B%E6%A0%BC" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3274070" class="blog_comment_body">看过文章，感觉前端真是另一片天空。。<br>感谢楼主的分享，学习了。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3274070,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3274070,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3274070_avatar" style="display:none;">http://pic.cnblogs.com/face/313227/20160519112119.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3383831" class="layer">#27楼</a><a name="3383831" id="comment_anchor_3383831"></a>  <span class="comment_date">2016-03-17 15:25</span> <a id="a_comment_author_3383831" href="https://www.cnblogs.com/st-leslie/" target="_blank">谢灿勇</a> <a href="http://msg.cnblogs.com/send/%E8%B0%A2%E7%81%BF%E5%8B%87" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3383831" class="blog_comment_body">写的不错，但是有些写漏了</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3383831,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3383831,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3383831_avatar" style="display:none;">http://pic.cnblogs.com/face/728493/20161121220121.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3441573" class="layer">#28楼</a><a name="3441573" id="comment_anchor_3441573"></a>  <span class="comment_date">2016-05-30 08:54</span> <a id="a_comment_author_3441573" href="https://www.cnblogs.com/lgxyl/" target="_blank">萧亮</a> <a href="http://msg.cnblogs.com/send/%E8%90%A7%E4%BA%AE" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3441573" class="blog_comment_body">css 第十一题， 如何垂直居中一个元素， 在未知元素宽高的情况下，有错误。。。<br>你写明明是有宽高的。而且去了宽高就不起作用了。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3441573,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3441573,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3441573_avatar" style="display:none;">http://pic.cnblogs.com/face/802525/20171118145249.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3441652" class="layer">#29楼</a><a name="3441652" id="comment_anchor_3441652"></a>[<span class="louzhu">楼主</span>]  <span class="comment_date">2016-05-30 09:45</span> <a id="a_comment_author_3441652" href="https://www.cnblogs.com/coco1s/" target="_blank">ChokCoco</a> <a href="http://msg.cnblogs.com/send/ChokCoco" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3441652" class="blog_comment_body"><a href="http://www.cnblogs.com/coco1s/p/4034937.html#3441573" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3441573);">@</a>
+萧亮<br>感谢提出。确实有点问题的，未知高宽的可以看看这篇：<br><a href="http://www.cnblogs.com/coco1s/p/4444383.html" target="_blank">http://www.cnblogs.com/coco1s/p/4444383.html</a></div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3441652,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3441652,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3441652_avatar" style="display:none;">http://pic.cnblogs.com/face/608782/20160411131806.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3441662" class="layer">#30楼</a><a name="3441662" id="comment_anchor_3441662"></a>  <span class="comment_date">2016-05-30 09:50</span> <a id="a_comment_author_3441662" href="https://www.cnblogs.com/lgxyl/" target="_blank">萧亮</a> <a href="http://msg.cnblogs.com/send/%E8%90%A7%E4%BA%AE" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3441662" class="blog_comment_body"><a href="http://www.cnblogs.com/coco1s/p/4034937.html#3441652" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,3441652);">@</a>
+ChokCoco<br>恩，谢谢</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3441662,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3441662,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_3441662_avatar" style="display:none;">http://pic.cnblogs.com/face/802525/20171118145249.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3449734" class="layer">#31楼</a><a name="3449734" id="comment_anchor_3449734"></a>  <span class="comment_date">2016-06-10 22:27</span> <a id="a_comment_author_3449734" href="http://home.cnblogs.com/u/976495/" target="_blank">zdnfkk</a> <a href="http://msg.cnblogs.com/send/zdnfkk" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3449734" class="blog_comment_body">新手支持楼主的资料</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3449734,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3449734,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/coco1s/p/4034937.html#3549048" class="layer">#32楼</a><a name="3549048" id="comment_anchor_3549048"></a><span id="comment-maxId" style="display:none;">3549048</span><span id="comment-maxDate" style="display:none;">2016/11/6 0:36:28</span>  <span class="comment_date">2016-11-06 00:36</span> <a id="a_comment_author_3549048" href="http://home.cnblogs.com/u/443152/" target="_blank">346196247</a> <a href="http://msg.cnblogs.com/send/346196247" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_3549048" class="blog_comment_body">还是不懂不明</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(3549048,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(3549048,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	<div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" onclick="return RefreshCommentList();" id="lnk_RefreshComments" runat="server" clientidmode="Static">刷新评论</a><a href="http://www.cnblogs.com/coco1s/p/4034937.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://www.cnblogs.com/coco1s/p/4034937.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"></div>
+<div id="ad_t2"><a href="http://www.ucancode.com/index.htm" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Link&#39;, &#39;click&#39;, &#39;T2-工控&#39;)">【推荐】超50万C++/C#源码: 大型实时仿真HMI组态CAD\GIS图形源码！</a><br><a href="https://gitee.com/enterprises?from=bky-2" target="_blank" onclick="ga(&#39;send&#39;, &#39;event&#39;, &#39;Link&#39;, &#39;click&#39;, &#39;T2-gitee&#39;)">【推荐】专业便捷的企业级代码托管服务 - Gitee 码云</a><br></div>
+<div id="opt_under_post"></div>
+<script async="async" src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/gpt.js.下载"></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+<script>
+  googletag.cmd.push(function() {
+        googletag.defineSlot('/1090369/C1', [300, 250], 'div-gpt-ad-1546353474406-0').addService(googletag.pubads());
+        googletag.defineSlot('/1090369/C2', [468, 60], 'div-gpt-ad-1539008685004-0').addService(googletag.pubads());
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+  });
+</script>
+<div id="cnblogs_c1" class="c_ad_block">
+    <div id="div-gpt-ad-1546353474406-0" style="height:250px; width:300px;" data-google-query-id="CIXN_9Kc2OACFc6UvQodhhcAfA"><div id="google_ads_iframe_/1090369/C1_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe frameborder="0" src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/container.html" id="google_ads_iframe_/1090369/C1_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="300" height="250" data-is-safeframe="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-google-container-id="1" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div>
+</div>
+<div id="under_post_news"><div class="itnews c_ad_block"><b>相关博文：</b><br>·  <a href="https://www.cnblogs.com/coco1s/p/4034937.html" target="_blank" onclick="clickRecomItmem(undefined,&#39;undefined&#39;)">BAT及各大互联网公司2014前端笔试面试题--Html,Css篇</a><br>·  <a href="https://www.cnblogs.com/coco1s/p/4029708.html" target="_blank" onclick="clickRecomItmem(undefined,&#39;undefined&#39;)">BAT及各大互联网公司2014前端笔试面试题--JavaScript篇</a><br>·  <a href="https://www.cnblogs.com/zy-plan/p/5193795.html" target="_blank" onclick="clickRecomItmem(undefined,&#39;undefined&#39;)">BAT及各大互联网公司2014前端笔试面试题：HTML/CSS篇</a><br>·  <a href="https://www.cnblogs.com/HELEN-LI/p/5239775.html" target="_blank" onclick="clickRecomItmem(undefined,&#39;undefined&#39;)">BAT及各大互联网公司2014前端笔试面试题--Html,Css篇</a><br>·  <a href="https://www.cnblogs.com/minghui007/p/4331608.html" target="_blank" onclick="clickRecomItmem(undefined,&#39;undefined&#39;)">BAT及各大互联网公司2014前端笔试面试题--Html,Css篇</a><br></div></div>
+<div id="cnblogs_c2" class="c_ad_block">
+    <div id="div-gpt-ad-1539008685004-0" style="height:60px; width:468px;" data-google-query-id="CJrM_9Kc2OACFQJevQodabUH1g"><div id="google_ads_iframe_/1090369/C2_0__container__" style="border: 0pt none; display: inline-block; width: 468px; height: 60px;"><iframe frameborder="0" src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/container(1).html" id="google_ads_iframe_/1090369/C2_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="468" height="60" data-is-safeframe="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-google-container-id="2" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div>
+</div>
+<div id="under_post_kb"><div class="itnews c_ad_block"><b>最新新闻</b>：<br> ·  <a href="https://news.cnblogs.com/n/620320/" target="_blank">科技股收盘|美三大股指周一集体收涨 凤凰新媒体大涨逾三成</a><br> ·  <a href="https://news.cnblogs.com/n/620319/" target="_blank">巴菲特：苹果股票若变得更便宜，我们将会买进</a><br> ·  <a href="https://news.cnblogs.com/n/620318/" target="_blank">沃达丰CEO警告：禁止华为将致欧洲5G部署推迟两年</a><br> ·  <a href="https://news.cnblogs.com/n/620317/" target="_blank">戴姆勒宝马投资11亿美元开发多种方案 对抗Uber/Lyft</a><br> ·  <a href="https://news.cnblogs.com/n/620316/" target="_blank">4G和5G的新漏洞允许拦截呼叫和跟踪手机位置</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div></div>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+ if(enablePostBottom()) {
+    codeHighlight();
+    fixPostBody();
+    setTimeout(function () { incrementViewCount(cb_entryId); }, 50);
+    deliverT2();
+    deliverC1();
+    deliverC2();    
+    loadNewsAndKb();
+    loadBlogSignature();
+    LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+    GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate, cb_postType);
+    loadOptUnderPost();
+    GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);  
+}
+</script>
+</div>
+
+    
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><a class="github-fork" href="https://github.com/chokcoco" target="_blank"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/forkme.png"></a>
+<div class="mygithub">
+  <img id="slide-avatar" src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/20160411131806(1).png"> 
+  <h3 class="h3-title" id="silde-github">我的Github</h3>
+  <a class="mygithub" href="https://github.com/chokcoco" target="_blank"><img src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/github.png"></a>
+</div>
+
+<script type="text/javascript">window['__document_write_ajax_callbacks__']['3']();</script><script>window['__document_write_ajax_callbacks__']['1']();</script><div id="profile_block">昵称：<a href="https://home.cnblogs.com/u/coco1s/">ChokCoco</a><br>园龄：<a href="https://home.cnblogs.com/u/coco1s/" title="入园时间：2014-03-02">4年11个月</a><br>荣誉：<a href="https://www.cnblogs.com/expert/">推荐博客</a><br>粉丝：<a href="https://home.cnblogs.com/u/coco1s/followers/">3720</a><br>关注：<a href="https://home.cnblogs.com/u/coco1s/followees/">53</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="follow(&#39;97b0660a-69a1-e311-8d02-90b11c0b17d6&#39;)">+加关注</a></div><script type="text/javascript">window['__document_write_ajax_callbacks__']['4']();</script><script>window['__document_write_ajax_callbacks__']['2']();</script></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="blog-calendar" style="display:none"></div><script type="text/javascript">loadBlogDefaultCalendar();</script>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn"><div id="sidebar_search" class="sidebar-block"></div><div id="sidebar_recentposts" class="sidebar-block">
+<div class="catListEssay">
+<h3 class="catListTitle">最新随笔</h3>
+<ul>
+<li><a href="https://www.cnblogs.com/coco1s/p/10244168.html">1. 不可思议的纯 CSS 滚动进度条效果</a></li><li><a href="https://www.cnblogs.com/coco1s/p/10137045.html">2. 探究 CSS 混合模式\滤镜导致 CSS 3D 失效问题</a></li><li><a href="https://www.cnblogs.com/coco1s/p/9913885.html">3. 你所不知道的 CSS 阴影技巧与细节</a></li><li><a href="https://www.cnblogs.com/coco1s/p/9453938.html">4. 滚动视差？CSS 不在话下</a></li><li><a href="https://www.cnblogs.com/coco1s/p/9406413.html">5. 神奇的选择器 :focus-within</a></li><li><a href="https://www.cnblogs.com/coco1s/p/8882542.html">6. 妙用 scale 与 transfrom-origin，精准控制动画方向</a></li><li><a href="https://www.cnblogs.com/coco1s/p/8657192.html">7. 不可思议的纯CSS导航栏下划线跟随效果</a></li><li><a href="https://www.cnblogs.com/coco1s/p/8513376.html">8. 区块链 PoW 与 PoS 的纷争</a></li><li><a href="https://www.cnblogs.com/coco1s/p/8124815.html">9. 不可思议的混合模式 background-blend-mode</a></li><li><a href="https://www.cnblogs.com/coco1s/p/8080211.html">10. 两行 CSS 代码实现图片任意颜色赋色技术</a></li>
+</ul>
+</div>
+</div><div id="sidebar_categories">
+<div id="sidebar_postcategory" class="catListPostCategory sidebar-block">
+<h3 class="catListTitle">随笔分类<span style="font-size:11px;font-weight:normal">(186)</span></h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_0_Link_0" href="https://www.cnblogs.com/coco1s/category/833837.html">CSS进阶(51)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_1" href="https://www.cnblogs.com/coco1s/category/556820.html">Encourage(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_2" href="https://www.cnblogs.com/coco1s/category/557748.html">html,css,javascript(56)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_3" href="https://www.cnblogs.com/coco1s/category/835948.html">Javascript(9)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_4" href="https://www.cnblogs.com/coco1s/category/807452.html">Javascript&amp;CSS3动画(21)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_5" href="https://www.cnblogs.com/coco1s/category/799728.html">jQuery 源码分析(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_6" href="https://www.cnblogs.com/coco1s/category/834097.html">nodeJS(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_7" href="https://www.cnblogs.com/coco1s/category/929343.html">SVG(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_8" href="https://www.cnblogs.com/coco1s/category/671277.html">编码技巧(9)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_9" href="https://www.cnblogs.com/coco1s/category/724052.html">插件扩展(2)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_10" href="https://www.cnblogs.com/coco1s/category/1034204.html">代码规范(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_11" href="https://www.cnblogs.com/coco1s/category/769322.html">计算机基础(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_12" href="https://www.cnblogs.com/coco1s/category/831730.html">面试笔试(13)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_13" href="https://www.cnblogs.com/coco1s/category/868401.html">前端安全(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_14" href="https://www.cnblogs.com/coco1s/category/622227.html">前端框架类库(3)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_15" href="https://www.cnblogs.com/coco1s/category/1172297.html">区块链(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_16" href="https://www.cnblogs.com/coco1s/category/672219.html">图片处理(1)</a> </li>
+
+<li><a id="CatList_LinkList_0_Link_17" href="https://www.cnblogs.com/coco1s/category/621606.html">性能优化(7)</a> </li>
+
+</ul>
+
+</div>
+
+<div id="sidebar_links827540" class="catList sidebar-block">
+<h3 class="catListTitle">友情链接</h3>
+
+<ul>
+
+<li><a id="CatList_LinkList_1_Link_0" href="https://www.cnblogs.com/aaronjs/" rel="nofollow" target="_blank">Aaron</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_1" href="https://www.cnblogs.com/cyfonly/" rel="nofollow">cyfonly</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_2" href="https://www.cnblogs.com/h-hq/" rel="nofollow" target="_blank">hoohack</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_3" href="https://www.cnblogs.com/vajoy/" rel="nofollow" target="_blank">Vajoy</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_4" href="https://www.cnblogs.com/zichi/" rel="nofollow">韩子迟</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_5" href="http://www.lcgod.com/" rel="nofollow">李聪</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_6" href="https://www.chengrang.com/" rel="nofollow">练小习</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_7" href="https://www.cnblogs.com/dojo-lzz/" rel="nofollow" target="_blank">木的树</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_8" href="https://refined-x.com/" rel="nofollow">前端路上</a> </li>
+
+<li><a id="CatList_LinkList_1_Link_9" href="http://www.zoucz.com/" rel="nofollow">邹成卓</a> </li>
+
+</ul>
+
+</div>
+
+</div><div id="sidebar_scorerank" class="sidebar-block">
+<div class="catListBlogRank">
+<h3 class="catListTitle">积分与排名</h3>
+<ul>
+	<li class="liScore">
+		积分 -	263747
+	</li>
+	<li class="liRank">
+		排名 -	1034
+	</li>
+</ul>
+</div>
+
+
+</div><div id="sidebar_topviewedposts" class="sidebar-block"><div id="topview_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock"><ul><li><a href="https://www.cnblogs.com/coco1s/p/5261646.html">1. 【深入浅出jQuery】源码浅析--整体架构(80267)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/4375774.html">2. 【前端攻略】：玩转图片Base64编码(67968)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/3953653.html">3. 跟着9张思维导图学习Javascript(44058)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/4444383.html">4. 【前端攻略】最全面的水平垂直居中方案与flexbox布局(41771)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5499469.html">5. 【前端性能】高性能滚动 scroll 及页面渲染优化(38171)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/4954063.html">6. 【nodeJS爬虫】前端爬虫系列 -- 小爬「博客园」(35443)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/4029708.html">7. BAT及各大互联网公司2014前端笔试面试题--JavaScript篇(34098)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/4034937.html">8. BAT及各大互联网公司2014前端笔试面试题--Html,Css篇(31844)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5414153.html">9. 【CSS3进阶】酷炫的3D旋转透视(31725)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/7197662.html">10. 纯 CSS 实现波浪效果！(31601)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5777260.html">11. 【前端安全】JavaScript防http劫持与XSS(30200)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/6402723.html">12. 使用 position:sticky 实现粘性布局(27597)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/4833199.html">13. 【优雅代码】深入浅出 妙用Javascript中apply、call、bind(27562)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5303041.html">14. 【深入浅出jQuery】源码浅析2--奇技淫巧(17776)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5711795.html">15. 神秘的 shadow-dom 浅析(16485)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topcommentedposts" class="sidebar-block"><div id="topfeedback_posts_wrap">
+<div class="catListFeedback">
+<h3 class="catListTitle">评论排行榜</h3>
+	<div id="TopFeedbackPostsBlock"><ul><li><a href="https://www.cnblogs.com/coco1s/p/3953653.html">1. 跟着9张思维导图学习Javascript(83)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5261646.html">2. 【深入浅出jQuery】源码浅析--整体架构(80)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5528393.html">3. 【CSS进阶】伪元素的妙用--单标签之美(54)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5333786.html">4. 【BOOM】一款有趣的Javascript动画效果(53)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/4725477.html">5. 清除页面广告？身为前端，自己做一款简易的chrome扩展吧(51)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5499469.html">6. 【前端性能】高性能滚动 scroll 及页面渲染优化(48)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/4375774.html">7. 【前端攻略】：玩转图片Base64编码(46)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/7197662.html">8. 纯 CSS 实现波浪效果！(44)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/4954063.html">9. 【nodeJS爬虫】前端爬虫系列 -- 小爬「博客园」(43)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/4833199.html">10. 【优雅代码】深入浅出 妙用Javascript中apply、call、bind(43)</a></li></ul></div>
+</div>
+</div></div><div id="sidebar_topdiggedposts" class="sidebar-block"><div id="topdigg_posts_wrap">
+<div class="catListView">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div id="TopDiggPostsBlock"><ul><li><a href="https://www.cnblogs.com/coco1s/p/3953653.html">1. 跟着9张思维导图学习Javascript(192)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5261646.html">2. 【深入浅出jQuery】源码浅析--整体架构(181)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5528393.html">3. 【CSS进阶】伪元素的妙用--单标签之美(137)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5499469.html">4. 【前端性能】高性能滚动 scroll 及页面渲染优化(129)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5333786.html">5. 【BOOM】一款有趣的Javascript动画效果(127)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5777260.html">6. 【前端安全】JavaScript防http劫持与XSS(121)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/7197662.html">7. 纯 CSS 实现波浪效果！(119)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/4833199.html">8. 【优雅代码】深入浅出 妙用Javascript中apply、call、bind(104)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/4034937.html">9. BAT及各大互联网公司2014前端笔试面试题--Html,Css篇(89)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/6992177.html">10. 奇妙的 CSS shapes(CSS图形)(88)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5303041.html">11. 【深入浅出jQuery】源码浅析2--奇技淫巧(84)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/5439619.html">12. 【Web动画】CSS3 3D 行星运转 &amp;&amp; 浏览器渲染原理(77)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/4029708.html">13. BAT及各大互联网公司2014前端笔试面试题--JavaScript篇(77)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/9913885.html">14. 你所不知道的 CSS 阴影技巧与细节(71)</a></li><li><a href="https://www.cnblogs.com/coco1s/p/7079529.html">15. 神奇的 conic-gradient 圆锥渐变(71)</a></li></ul></div>
+</div></div></div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		<h3 class="h3-title" id="slide-collect">Since 2016.05.25 </h3><a href="https://info.flagcounter.com/nrVs"><img class="collect" src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/saved_resource" alt="Flag Counter" border="0"></a><h3 class="h3-title" id="slide-others">Others</h3><div class="promo-card"><div class="promo-img-box"></div><div class="inside-box"><p class="qq-number">QQ群：460065020</p><p>前端读书打卡交流群 &gt;_&lt; </p></div></div></div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2019 ChokCoco
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+
+<!--PageEndHtml Block Begin-->
+<script>
+var href = location.href;
+
+if(/https/.test(href)) {
+     document.querySelectorAll('iframe').forEach(val => { 
+	val.src = 'https:' + val.src.split(':')[1];
+    });
+}
+
+var l = document.createElement('link');
+l.rel = "shortcut icon";
+l.href = "http://images.cnblogs.com/cnblogs_com/coco1s/965277/o_favicon.png";
+document.getElementsByTagName("head")[0].appendChild(l);
+
+</script>
+<div id="rocket"></div>
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259286380'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1259286380%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1259286380"><a href="https://www.cnzz.com/stat/website.php?web_id=1259286380" target="_blank">站长统计</a><a href="https://www.cnzz.com/stat/website.php?web_id=1259286380" target="_blank"> |  今日IP[46] | 今日PV[53] | 昨日IP[457] |  昨日PV[627] | </a><a href="https://www.cnzz.com/stat/website.php?web_id=1259286380&amp;method=online" target="_blank">当前在线[8]</a></span><script src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/z_stat.php" type="text/javascript"></script><script src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/core.php" charset="utf-8" type="text/javascript"></script><script type="text/javascript">
+$('#sideBar').find('iframe').parent().remove();
+$('#sideBar>div').not('#sideBarMain').remove();
+</script><script type="text/javascript">
+if (!!$('#EntryTag').text()) {
+	var
+		firstMeta = $('meta').eq(0),
+		keywords = $('#EntryTag').text().substr(3),
+		metakeywords = "",
+		description = $('#cb_post_title_url').text(),
+		metaDescription = "";
+
+		firstMeta.after(metakeywords);
+		firstMeta.after(metaDescription);
+}
+</script>
+<script>
+var i = 0,
+	deIframe = setInterval(function(){
+		i++;
+		$('#sideBar').find('iframe').parent().remove();
+		$('#sideBar>div').not('#sideBarMain').remove();
+		if(i == 10){
+			clearInterval(deIframe);
+		}
+	}, 200);
+</script>
+<script>
+var reward = (function(){
+	function dataInsert(){
+		var data = 	'<div class="m-reward">'
+							+ '<div class="m-desc">如果觉得文章对您有用，请随意打赏。您的支持将鼓励我继续创作！</div>'
+							+ '<div class="reward-btn">打赏支持</div>'
+							+ '</div>'
+							+ '<div class="reward-wrap">'
+							+ '<div class="reward-btn-close">+</div>'
+							+ '<h2>(^_^)打个赏喝个咖啡(^_^)</h2>'
+							+ '<div class="wechat">'
+							+ '<img src="https://images.cnblogs.com/cnblogs_com/coco1s/881614/o_weixin.png" alt="微信支付" />'
+							+ '</div>'
+							+ '<div class="zhifubao">'
+							+ '<img src="https://images.cnblogs.com/cnblogs_com/coco1s/881614/o_zhifubao.png" alt="支付宝支付" />'
+							+ '</div>	'
+							+ '</div>';
+
+		if($('#cnblogs_post_body')){
+			$('#cnblogs_post_body').append(data);		
+			eventBind();
+		}					
+	}
+
+	function eventBind(){
+		$('.reward-btn').on('click', function(event) {
+			$('.reward-wrap').fadeIn(300);
+		});
+
+		$('.reward-btn-close').on('click', function(event) {
+			$('.reward-wrap').fadeOut(500);
+		});
+	}
+	
+	return{
+		init:function(){
+			dataInsert();
+		}
+	}
+})();
+reward.init();
+</script>
+<script>
+/** 侧边栏回到顶部 */
+var rocket = $('#rocket');
+
+$(window).on('scroll', debounce(slideTopSet, 300));
+
+function debounce(func, wait) {
+	var timeout;
+	return function() {
+		clearTimeout(timeout);
+		timeout = setTimeout(func, wait);
+	};
+};
+function slideTopSet() {
+	var top = $(document).scrollTop();
+
+	if (top > 200) {
+		rocket.addClass('show');
+	} else {
+		rocket.removeClass('show');
+	}
+}
+$(document).on('click', '#rocket', function(event) {
+	rocket.addClass('move');
+	$('body, html').animate({
+		scrollTop: 0
+	}, 800);
+});
+$(document).on('animationEnd', function() {
+	setTimeout(function() {
+		rocket.removeClass('move');
+	}, 400);
+
+});
+$(document).on('webkitAnimationEnd', function() {
+	setTimeout(function() {
+		rocket.removeClass('move');
+	}, 400);
+});
+</script>
+<!--PageEndHtml Block End-->
+
+
+<script type="text/javascript">
+var str = "<h3 class='h3-title' id='slide-collect'>Since 2016.05.25 </h3>"+
+			"<a href='https://info.flagcounter.com/nrVs'>"+
+			"<img class='collect' src='https://s06.flagcounter.com/countxl/nrVs/bg_FFFFFF/txt_333333/border_E6E6E6/columns_2/maxflags_10/viewers_0/labels_0/pageviews_1/flags_0/percent_0/' alt='Flag Counter' border='0'></a>"+
+			"<h3 class='h3-title' id='slide-others'>Others</h3>" +
+            "<div class='promo-card'>" +
+            "<div class='promo-img-box'></div>" +
+            "<div class='inside-box'>" +
+            "<p class='qq-number'>QQ群：460065020</p>" +
+            "<p>前端读书打卡交流群 >_< </p>" +
+            "</div></div>";
+
+slideBar = $('#sideBar #sideBarMain');
+slideBar.append(str);
+</script><script type="text/javascript">getFollowStatus('97b0660a-69a1-e311-8d02-90b11c0b17d6')</script><iframe id="google_osd_static_frame_536370260431" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./前端练习题--Html,Css篇 - ChokCoco - 博客园_files/saved_resource.html"></iframe></body></html>
