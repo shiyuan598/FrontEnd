@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            height: 100%;
+        }
+        .left{
+            float: left;
+            width: 100px;
+            background-color: #19be6b;
+        }
+        .right{
+            float: right;
+            width: 100px;
+            background-color: #ff9900;
+        }
+        .content{
+            /* 上下，左右;等同于0 200px 0 200px 上、右、下、左*/
+            margin: 0 100px;
+            background-color: #17233d;
+        }
+
+    </style>
+</head>
+<body>
+<!--https://www.cnblogs.com/holiday1123/p/5357574.html-->
+<!--也需要加上float，会使得div inline-block-->
+<div class="left">向左浮动</div>
+<div class="right">向右浮动</div>
+<div class="content">必须放最后</div>
+</body>
+</html>

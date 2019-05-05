@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Postmessage 1</title>
+</head>
+<body>
+    <button id = "btn">send</button>
+</body>
+</html>
+<script>
+window.addEventListener("message", function(e){
+    if(e.source !== window.parent){
+        //
+    }
+    var mes = e.data;
+    console.log("page1 receive：" + mes);
+});
+document.getElementById("btn").onclick = function(){
+    var mes = "click page 1";
+    window.postMessage(mes, "http://localhost:8081/postmessage/page2.html");
+    console.log("page1 send:" + mes);
+}
+
+</script>

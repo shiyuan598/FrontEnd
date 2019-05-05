@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>纵向布局-目录树效果</title>
+    <style>
+        * {
+            font-size: 14px;
+            color: #555;
+            font-family: "微软雅黑";
+        }
+
+        #content {
+            border: skyblue solid 1px;
+            border-radius: 5px;
+            margin: 0px;
+            width: 361px;
+            /* height:400px; */
+            /* overflow-y:auto; */
+        }
+
+        #title{
+            background: #51a3dd;
+            font-size: 30px;
+            height:35px;
+            line-height: 35px;
+        }
+        
+        .title{
+            float: left;
+            width:120px;
+            font-size: 16px;
+            padding-left:5px;
+            color:#eee;
+        }
+        .close{
+            float: right;
+            width:20px;
+            font-size: 24px;
+            color:#eee;
+        }
+
+        #district {
+            height: 60px;
+            width: 360px;
+            margin: 0px;
+            background: seashell;
+            font-family: "微软雅黑";
+            color: #555;
+            font-size: 14px;
+        }
+
+        ul,
+        li {
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li {
+            float: left;
+            margin: 3px;
+            height: 25px;
+            line-height: 25px;
+            width: auto;
+        }
+
+        li span:hover {
+            cursor: pointer;
+            text-decoration: underline #555;
+            font-weight: 600;
+        }
+
+        #plan-content {
+            background: #eee;
+            margin: 0px;
+            width: 360px;
+        }
+
+        dl,
+        dt,
+        dd {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        dt {
+            height: 25px;
+            margin: 3px;
+            padding: 3px;
+            background-color: #c3e3f0;
+        }
+
+        dt div {
+            height: 25px;
+            vertical-align: middle;
+        }
+
+        dt div span {
+            display: block;
+            height:25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            color: #333;
+            /* vertical-align: middle; */
+            padding-top:5px;
+        }
+
+        .category {
+            height: 25px;
+            display: inline-block;
+        }
+
+        .info {
+            height: 25px;
+            display: block;
+            float: right;
+        }
+
+        dd {
+            width: 360px;
+            height: 30px;
+            padding: 20 0px;
+            border-bottom: #c3e3f0 solid 1px;
+        }
+        div.dd-list{
+            height:100px;
+            overflow-y: scroll;
+            overflow-x:hidden;
+        }
+
+        dd div {
+            float: left;
+        }
+
+        div.cate-img {
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+        }
+
+        div.cate-info {
+            height: 20px;
+            width: 320px;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div id="title"><div class="title">防空袭预案</div><div class="close">&times;</div></div>
+        <div id="district">
+            <ul>
+                <li><span>泰州市</span></li>
+                <li><span>海陵区</span></li>
+                <li><span>高岗区</span></li>
+                <li><span>姜堰区</span></li>
+                <li><span>兴化市</span></li>
+                <li><span>靖江市</span></li>
+                <li><span>泰兴市</span></li>
+                <li><span>海陵区</span></li>
+                <li><span>高岗区</span></li>
+                <li><span>姜堰区</span></li>
+                <li><span>兴化市</span></li>
+                <li><span>靖江市</span></li>
+                <li><span>泰兴市</span></li>
+            </ul>
+        </div>
+        <div id="plan-content">
+            <dl>
+                <dt>
+                    <div><span class="category">基本预案</span><span class="info">1个结果</span></div>
+                </dt>
+                <dd>
+                    <div class="cate-img"><img src="resource/1.png" alt=""></div>
+                    <div class="cate-info" id="plan1">泰州市人民防空通信保障预案</div>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <div><span class="category">行动预案</span><span class="info">4个结果</span></div>
+                </dt>
+                <div class="dd-list">
+                    <dd>
+                        <div class="cate-img"><img src="resource/1.png" alt=""></div>
+                        <div class="cate-info" id="plan1">泰州市人民防空通信保障预案</div>
+                    </dd>
+                    <dd>
+                        <div class="cate-img"><img src="resource/1.png" alt=""></div>
+                        <div class="cate-info" id="plan2">泰州市人民防空通信保障预案</div>
+                    </dd>
+                    <dd>
+                        <div class="cate-img"><img src="resource/1.png" alt=""></div>
+                        <div class="cate-info" id="plan3">泰州市人民防空通信保障预案</div>
+                    </dd>
+                    <dd>
+                        <div class="cate-img"><img src="resource/1.png" alt=""></div>
+                        <div class="cate-info" id="plan4">泰州市人民防空通信保障预案</div>
+                    </dd>
+                    <dd>
+                        <div class="cate-img"><img src="resource/1.png" alt=""></div>
+                        <div class="cate-info" id="plan2">泰州市人民防空通信保障预案</div>
+                    </dd>
+                    <dd>
+                        <div class="cate-img"><img src="resource/1.png" alt=""></div>
+                        <div class="cate-info" id="plan3">泰州市人民防空通信保障预案</div>
+                    </dd>
+                </div>
+            </dl>
+            <dl>
+                <dt>
+                    <div><span class="category">保障预案</span><span class="info">1个结果</span></div>
+                </dt>
+                <dd>
+                    <div class="cate-img"><img src="resource/1.png" alt=""></div>
+                    <div class="cate-info" id="plan4">泰州市人民防空通信保障预案</div>
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <div><span class="category">应急预案</span><span class="info">0个结果</span></div>
+                </dt>
+            </dl>
+
+        </div>
+    </div>
+</body>
+
+</html>
