@@ -8,46 +8,87 @@
     <title>Document</title>
     <style>
         .container{
-            background-color: rgb(119, 90, 90);
-            border-radius: 3px;
-            border: solid 1px #333;
-            width: 280px;
-            height: 160px;
+            border-radius: 5px;
+            border: solid 1px #eee;
+            width: 320px;
+            height: 140px;
+            font-family: "Microsoft YaHei UI";
         }
         .top, .top div{
             height: 30px;
-        }        
+            line-height: 30px;
+            font-size: 16px;
+        }
+        .top{
+            border-bottom: 1px solid #ccc;
+            padding: 5px;
+        }
         .title{
             float: left;
-            width: 250px;
-            background-color: green;
+            width: 260px;
+            text-align: left;
+            padding-left: 5px;
         }
         .close{
-            background-color: red;
             width: 30px;
             float: left;
+            text-align: center;
         }
-        .content, .content div{            
-            height: 130px;
-        }
+        .content{
+             height: 90px;
+         }
         .left{
-            background-color: blueviolet;
-            width: 40%;
+            height: 80px;
+            width: 30%;
             float: left;
+            padding: 10px;
         }
         .right{
-            background-color: yellowgreen;
+            height: 90px;
             width: 60%;
             float: left;
-        }
-        .right div{
-            height: 50%;
+            padding: 10px 5px 5px;
         }
         .text{
-            background-color: #fff;
+            padding-left: 5px;
+            height: 45%;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
         }
         .btn{
-            background-color: #222;
+            height: 30%;
+            padding: 5px;
+            text-align: center;
+        }
+        .btn span{
+            display: inline-block;
+            width: 80px;
+            height: 32px;
+            line-height: 32px;
+            border-radius: 30px;
+            text-align: center;
+        }
+        .btn span img{
+            margin-top: 5px;
+            height: 20px;
+            width: 20px;
+        }
+        .btn span a{
+            vertical-align: middle;
+            display: inline-block;
+            height: 20px;
+            margin-bottom: 20px;
+            text-decoration: none;
+            font-family: "Microsoft YaHei UI";
+            color: #fff;
+        }
+        .commentary{
+            background-color: #FF7256;
+        }
+        .navigate{
+            background-color: #5CACEE;
         }
 
     </style>
@@ -56,15 +97,19 @@
 <body>
     <div class="container">
         <div class="top">
-            <div class="title">title</div>
+            <div class="title">缘木印象</div>
             <div class="close">&times;</div>
         </div>
         <div class="content">
             <div class="left">
+                <img src="./info-img.jpg" alt="">
             </div>
             <div class="right">
-                <div class="text"></div>
-                <div class="btn"></div>
+                <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                <div class="btn">
+                    <span class="commentary"><img src="./commentary0.png" alt=""><a href="">解说</a></span>
+                    <span class="navigate"><img src="./navigate0.png" alt=""><a href="">导航</a></span>
+                </div>
             </div>
         </div>
     </div>
