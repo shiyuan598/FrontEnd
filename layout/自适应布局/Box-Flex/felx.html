@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        div{
+            color: #fff;
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+        }
+        .header{
+            background-color: #515a6e;
+            height: 20vh;
+            justify-content: left;
+            align-items: center;
+            flex-direction: row;
+        }
+        .item{
+            width: 8vw;
+            height: 2em;
+            border-radius: 1em;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            background-color: #333333;
+            margin-left: 0.5em;
+        }
+        .item img{
+            height: 1em;
+        }
+        .content{
+            background-color: #cccccc;
+            height: 65vh;
+        }
+        .left{
+            background-color: #54FF9F;
+            flex-grow: 1;
+            width: 30vw;
+            flex-direction: column;
+            justify-content: left;
+            align-content: center;
+        }
+        .left ul li{
+            height: 2em;
+            display: -webkit-flex;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-content: center;
+        }
+        .left ul li img{
+            height: 1.25em;
+        }
+        .left ul li a{
+            color: #fff;
+            text-decoration: none;
+        }
+        .main{
+            background-color: #FF7256;
+            flex-grow: 2;
+        }
+        .right{
+            background-color: #51a3dd;
+            flex-grow: 1;
+            width: 10vw;
+        }
+        .footer{
+            background-color: #555555;
+            height: 15vh;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="item"><img src="./bh1.png" alt="">item1</div>
+    <div class="item"><img src="./bh3.png" alt="">item3</div>
+    <div class="item"><img src="./bh4.png" alt="">item4</div>
+    <div class="item"><img src="./bh5.png" alt="">item5</div>
+    <div class="item"><img src="./bh6.png" alt="">item6</div>
+    <div class="item"><img src="./navigate.png" alt="">navigate</div>
+    <div class="item"><img src="./commentary.png" alt="">commentary</div>
+</div>
+<div class="content">
+    <div class="left">
+        <ul>
+            <li><img src="./navigate.png" alt="navigate"><a href="">Navigate</a></li>
+            <li><img src="./commentary.png" alt="commentary"><a href="">Commentary</a></li>
+        </ul>
+        Left
+    </div>
+    <div class="main">
+        Main
+    </div>
+    <div class="right">
+        Right
+    </div>
+</div>
+<div class="footer">
+    Lorem ipsum dolor sit amet.
+</div>
+</body>
+</html>

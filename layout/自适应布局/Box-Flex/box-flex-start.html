@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Box-Flex</title>
+    <style>
+        .header{
+            width: 60vw;
+            background-color: #17233d;
+            color: #fff;
+            padding: 2em;
+            box-sizing: border-box;
+            display: -webkit-box;
+        }
+        .container{
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            width: 60vw;
+        }
+        .container div{
+            padding: 10px;
+        }
+        .left{
+            /*-webkit-box-flex: 1;*/
+            background-color: #c3e3f0;
+            width: 30rem;
+        }
+        .right{
+            -webkit-box-flex: 2;
+            background-color: #FF7256;
+            /*width: 120px;*/
+        }
+        .content{
+            /*-webkit-box-flex: 1;*/
+            width: 120px;
+            background-color: #54FF9F;
+        }
+        .footer{
+            background-color: #666666;
+            display: -webkit-box;
+            width: 60vw;
+        }
+        .footer div{
+            padding: 10px;
+        }
+        .about{
+            -webkit-box-flex: 1;
+        }
+        .learanMore{
+            -webkit-box-flex: 1;
+        }
+        .contact{
+            -webkit-box-flex: 1;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>Lorem ipsum dolor sit amet</h1>
+</div>
+<div class="container">
+    <div class="left">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos ex harum, natus necessitatibus non quos rerum temporibus vitae? Dolorem enim ex facere illo magnam maiores minima placeat repellendus voluptates?
+    </div>
+    <div class="right">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias consequuntur est expedita repellat repellendus rerum temporibus tenetur vel vitae.
+    </div>
+    <div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, rem!
+    </div>
+</div>
+<div class="footer">
+    <div class="about">
+        <h1>about</h1>
+    </div>
+    <div class="learanMore">
+        <h1>Learn More</h1>
+    </div>
+    <contact class="contact">
+        <h1>contact</h1>
+    </contact>
+</div>
+</body>
+</html>
