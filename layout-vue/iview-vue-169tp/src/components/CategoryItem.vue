@@ -18,6 +18,7 @@
 <script>
 export default {
   name: 'CategoryItem',
+  props: ['category'],
   data () {
     return {
       title: '手机壁纸',
@@ -44,13 +45,18 @@ export default {
         }
       ]
     }
+  },
+  created () {
+    if (this.category) {
+      this.title = this.category.title
+      this.imgList = this.category.imgList
+    }
   }
 }
 </script>
 
 <style scoped>
 .container {
-  height: 300px;
   border-top: solid 3px #323436;
   margin: 15px auto 0px auto;
   display: -webkit-flex;
@@ -64,8 +70,9 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 4rem;
+  height: 3rem;
 }
+
 .title-text {
   display: -webkit-flex;
   display: flex;
@@ -80,25 +87,41 @@ export default {
   display: flex;
   flex-basis: 32vw;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
   color: #888888;
 }
+
 .title-more:hover {
   text-decoration: solid #8888 underline;
 }
-.img-container{
+
+.img-container {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.img-list{
+
+.img-list {
   width: 180px;
   height: 320px;
   background-color: #fff;
+  margin-bottom: 1rem;
 }
-img{
+
+img {
   width: 180px;
   height: 280px;
+}
+
+.info {
+  color: #323436;
+  font-size: 0.875rem;
+  padding-top: 0.5rem;
+}
+
+.info:hover {
+  color: #ef4c79;
+  text-decoration: #ef4c79 solid underline;
 }
 </style>

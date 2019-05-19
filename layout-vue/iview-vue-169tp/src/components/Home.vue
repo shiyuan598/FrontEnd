@@ -10,22 +10,22 @@
       </div>
     </div>
     <div class="layout">
-      <Layout>
-        <Header class="header">
-          <div class="category">
-            <div class="layout-nav">
-              <MenuItem class="category-item" :class="currentItem==index?'category-item-current':''" :key="item.name" v-for="(item, index) in catagory" :name="index">
-                {{item.name}}
-              </MenuItem>
-            </div>
+      <div>
+        <div class="header">
+          <div class="layout-nav">
+            <MenuItem class="category-item" :class="currentItem==index ? 'category-item-current' : ''" :key="item.name"
+                      v-for="(item, index) in catagory" :name="index">
+              {{item.name}}
+            </MenuItem>
           </div>
-        </Header>
-        <Content class="content">
+        </div>
+        <div class="content">
           <OverView></OverView>
-          <CategoryItem></CategoryItem>
-        </Content>
-        <Footer class="footer">Copyright © 2007-2019 169美女图片网 皖ICP备17023633号-1</Footer>
-      </Layout>
+          <CategoryItem :key="item.title" :category="item" v-for="item in categoryDetails"></CategoryItem>
+          <TabsItem :tabs-list="tabsList"></TabsItem>
+        </div>
+        <div class="footer">Copyright © 2007-2019 169美女图片网 皖ICP备17023633号-1</div>
+      </div>
     </div>
   </div>
 </template>
@@ -33,9 +33,11 @@
 <script>
 import OverView from '@/components/OverView'
 import CategoryItem from '@/components/CategoryItem'
+import TabsItem from '@/components/TabsItem'
+
 export default {
   name: 'Home',
-  components: {OverView, CategoryItem},
+  components: {OverView, CategoryItem, TabsItem},
   data () {
     return {
       currentItem: 0,
@@ -61,6 +63,10 @@ export default {
           href: 'https://www.169tp.com/guoneimeinv/'
         },
         {
+          name: '日本美女',
+          href: 'https://www.169tp.com/guoneimeinv/'
+        },
+        {
           name: '手机壁纸',
           href: 'https://www.169tp.com'
         },
@@ -71,90 +77,322 @@ export default {
         {
           name: '人体艺术',
           href: 'https://www.169tp.com'
+        },
+        {
+          name: '手机版',
+          href: 'https://www.169tp.com'
+        }
+      ],
+      categoryDetails: [
+        {
+          title: '手机壁纸',
+          imgList: [
+            {
+              name: '插画中的美女',
+              src: '../../static/images/1_10060612251102.jpg'
+            },
+            {
+              name: '手机壁纸收藏',
+              src: '../../static/images/1_1006061034TU.jpg'
+            },
+            {
+              name: '怡然美景美不胜收壁纸欣赏',
+              src: '../../static/images/1_10060609459629.jpg'
+            },
+            {
+              name: '沙漠掠影高清图片下载',
+              src: '../../static/images/1_1006060R613O.jpg'
+            },
+            {
+              name: '山河美色iphone plus壁纸',
+              src: '../../static/images/1_1006060I0DH.jpg'
+            }
+          ]
+        },
+        {
+          title: '性感美女',
+          imgList: [
+            {
+              name: '女神在大自然里華村あ',
+              src: '../../static/images/1_051G4143X145.jpg'
+            },
+            {
+              name: '心往神驰的小萝莉瀬名きら',
+              src: '../../static/images/1_051Q55T09206.jpg'
+            },
+            {
+              name: '东瀛女孩的日常塩地美澄',
+              src: '../../static/images/1_051G4061T604.jpg'
+            },
+            {
+              name: '美女山崎真実写真大片',
+              src: '../../static/images/1_051G410123513.jpg'
+            },
+            {
+              name: '极致感性女神戸田れい',
+              src: '../../static/images/1_0516153ZAC4.jpg'
+            }
+          ]
+        },
+        {
+          title: '网友自拍',
+          imgList: [
+            {
+              name: '颓废的私人玩物美眉',
+              src: '../../static/images/1_051Q614224H2.jpg'
+            },
+            {
+              name: '可爱小猫咪牛仔裤美臀',
+              src: '../../static/images/1_051G40J32c7.jpg'
+            },
+            {
+              name: '发条少女勇敢露脸爆照',
+              src: '../../static/images/1_05141601503361.jpg'
+            },
+            {
+              name: '蕾丝萝莉妹妹懒洋洋',
+              src: '../../static/images/1_05161543092910.jpg'
+            },
+            {
+              name: '白富美小姐姐节日狂欢',
+              src: '../../static/images/1_051G41233Q02.jpg'
+            }
+          ]
+        }
+        // {
+        //   title: '高跟丝袜',
+        //   imgList: [
+        //     {
+        //       name: '插画中的美女',
+        //       src: '../../static/images/1_10060612251102.jpg'
+        //     },
+        //     {
+        //       name: '手机壁纸收藏',
+        //       src: '../../static/images/1_1006061034TU.jpg'
+        //     },
+        //     {
+        //       name: '怡然美景美不胜收壁纸欣赏',
+        //       src: '../../static/images/1_10060609459629.jpg'
+        //     },
+        //     {
+        //       name: '沙漠掠影高清图片下载',
+        //       src: '../../static/images/1_1006060R613O.jpg'
+        //     },
+        //     {
+        //       name: '山河美色iphone plus壁纸',
+        //       src: '../../static/images/1_1006060I0DH.jpg'
+        //     }
+        //   ]
+        // },
+        // {
+        //   title: '国内美女',
+        //   imgList: [
+        //     {
+        //       name: '插画中的美女',
+        //       src: '../../static/images/1_10060612251102.jpg'
+        //     },
+        //     {
+        //       name: '手机壁纸收藏',
+        //       src: '../../static/images/1_1006061034TU.jpg'
+        //     },
+        //     {
+        //       name: '怡然美景美不胜收壁纸欣赏',
+        //       src: '../../static/images/1_10060609459629.jpg'
+        //     },
+        //     {
+        //       name: '沙漠掠影高清图片下载',
+        //       src: '../../static/images/1_1006060R613O.jpg'
+        //     },
+        //     {
+        //       name: '山河美色iphone plus壁纸',
+        //       src: '../../static/images/1_1006060I0DH.jpg'
+        //     }
+        //   ]
+        // },
+        // {
+        //   title: '日本美女',
+        //   imgList: [
+        //     {
+        //       name: '插画中的美女',
+        //       src: '../../static/images/1_10060612251102.jpg'
+        //     },
+        //     {
+        //       name: '手机壁纸收藏',
+        //       src: '../../static/images/1_1006061034TU.jpg'
+        //     },
+        //     {
+        //       name: '怡然美景美不胜收壁纸欣赏',
+        //       src: '../../static/images/1_10060609459629.jpg'
+        //     },
+        //     {
+        //       name: '沙漠掠影高清图片下载',
+        //       src: '../../static/images/1_1006060R613O.jpg'
+        //     },
+        //     {
+        //       name: '山河美色iphone plus壁纸',
+        //       src: '../../static/images/1_1006060I0DH.jpg'
+        //     }
+        //   ]
+        // },
+        // {
+        //   title: '电脑壁纸',
+        //   imgList: [
+        //     {
+        //       name: '插画中的美女',
+        //       src: '../../static/images/1_10060612251102.jpg'
+        //     },
+        //     {
+        //       name: '手机壁纸收藏',
+        //       src: '../../static/images/1_1006061034TU.jpg'
+        //     },
+        //     {
+        //       name: '怡然美景美不胜收壁纸欣赏',
+        //       src: '../../static/images/1_10060609459629.jpg'
+        //     },
+        //     {
+        //       name: '沙漠掠影高清图片下载',
+        //       src: '../../static/images/1_1006060R613O.jpg'
+        //     },
+        //     {
+        //       name: '山河美色iphone plus壁纸',
+        //       src: '../../static/images/1_1006060I0DH.jpg'
+        //     }
+        //   ]
+        // }
+      ],
+      tabsList: [
+        {
+          name: '友情链接',
+          content: [
+            {
+              name: '妹子图',
+              href: 'javascript:;'
+            },
+            {
+              name: '漂漂美术馆',
+              href: 'javascript:;'
+            },
+            {
+              name: '性感美女',
+              href: 'javascript:;'
+            }
+          ]
+        },
+        {
+          name: '合作伙伴',
+          content: [
+            {
+              name: '百度一下',
+              href: 'javascript:;'
+            },
+            {
+              name: '美图秀秀',
+              href: 'javascript:;'
+            }
+          ]
+        },
+        {
+          name: '网站导航',
+          content: [
+            {
+              name: '性感美女',
+              href: 'javascript:;'
+            },
+            {
+              name: '高跟丝袜',
+              href: 'javascript:;'
+            }
+          ]
         }
       ]
     }
-  },
-  mounted () {
   }
 }
 </script>
 
 <style scoped>
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
   width: 100%;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
-.container{
+
+.container {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
   background-color: #f0f1f1;
 }
-.title{
+
+.title {
   min-height: 70px;
   display: -webkit-flex;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   border-top: solid 3px #ef4c79;
 }
-.logo{
+
+.logo {
   justify-content: center;
-  flex-basis: 40vw;
+  flex-basis: 45vw;
   min-width: 270px;
 }
-.logo-img{
+
+.logo-img {
   height: 70px;
   width: 265px;
 }
-.title-info{
+
+.title-info {
   justify-content: center;
-  flex-basis: 40vw;
+  flex-basis: 45vw;
   align-self: flex-end;
+  flex-direction: column;
 }
-.title-info a{
+
+.title-info a {
   color: #323436;
   text-decoration: none;
   font-size: 0.875rem;
-  width: 100px;
+  padding: 0px 0px 0px 20px;
+  flex-basis: 15vw;
 }
-.title-info a:hover{
+
+.title-info a:hover {
   color: #ef4c79;
   text-decoration: #ef4c79 solid underline;
 }
-.layout{
-  height: calc(100vh - 70px);
-  display: -webkit-flex;
-  display: flex;
-}
 
-.category{
-  width: 85vw;
-  justify-content: center;
-}
-.layout-nav{
-  /*width: 80vw;*/
+.layout-nav {
+  height: 64px;
   min-width: 600px;
   display: -webkit-flex;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.category-item{
+
+.category-item {
+  height: 100%;
   color: #999999;
   width: 100px;
   min-width: 60px;
+  display: -webkit-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-.category-item:hover{
+
+.category-item:hover {
   background-color: #ef4c79;
   font-weight: 800;
   color: #ffffff;
   text-decoration: #fff solid underline;
 }
-.category-item-current{
+
+.category-item-current {
   background-color: #ef4c79;
   font-weight: 800;
   color: #ffffff;
@@ -165,7 +403,7 @@ export default {
   background-color: #323436;
 }
 
-.content{
+.content {
   flex-direction: column;
   justify-content: center;
   background-color: #f0f1f1;
@@ -173,6 +411,8 @@ export default {
 
 .footer {
   height: 10vh;
+  display: -webkit-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: #999;

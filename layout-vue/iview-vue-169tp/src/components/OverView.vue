@@ -4,7 +4,7 @@
       <Carousel dots="outside" autoplay loop :autoplay-speed="speed">
         <CarouselItem>
           <div class="demo-carousel">
-            <img class="logo-img" src="../../static/images/1_0630021TV353.jpg" alt="">
+            <img class="logo-img" src="../../static/images/1_06300146261S1.jpg" alt="">
           </div>
         </CarouselItem>
         <CarouselItem>
@@ -23,44 +23,44 @@
       <h3>每日鲜图</h3>
       <ul>
         <li><strong class="num01">1</strong> <a
-          href="https://www.169tp.com/wangyouzipai/2019/0518/43828.html" target="view_window" title="颓废的私人玩物美眉">颓废的私人玩物美眉</a>
+          href="javascript:;" target="view_window" title="颓废的私人玩物美眉">颓废的私人玩物美眉</a>
           <em>05-18 </em>
         </li>
         <li><strong class="num01">2</strong> <a
-          href="https://www.169tp.com/xingganmeinv/2019/0518/43827.html" target="view_window" title="有故事的女同学波多野結衣">有故事的女同学波多野結衣</a>
+          href="javascript:;" target="view_window" title="有故事的女同学波多野結衣">有故事的女同学波多野結衣</a>
           <em>05-18 </em>
         </li>
         <li><strong class="num01">3</strong> <a
-          href="https://www.169tp.com/guoneimeinv/2019/0518/43826.html" target="view_window" title="日系学妹思淇Sukiiii">日系学妹思淇Sukiiii</a>
+          href="javascript:;" target="view_window" title="日系学妹思淇Sukiiii">日系学妹思淇Sukiiii</a>
           <em>05-18 </em>
         </li>
         <li><strong class="num01">4</strong> <a
-          href="https://www.169tp.com/rentiyishu/2019/0518/43825.html" target="view_window" title="楚楚可人的美体晓梦may">楚楚可人的美体晓梦may</a>
+          href="javascript:;" target="view_window" title="楚楚可人的美体晓梦may">楚楚可人的美体晓梦may</a>
           <em>05-18 </em>
         </li>
         <li><strong class="num01">5</strong> <a
-          href="https://www.169tp.com/rentiyishu/2019/0518/43824.html" target="view_window" title="心心念念的姑娘栗子Riz">心心念念的姑娘栗子Riz</a>
+          href="javascript:;" target="view_window" title="心心念念的姑娘栗子Riz">心心念念的姑娘栗子Riz</a>
           <em>05-18 </em>
         </li>
         <li><strong class="num01">6</strong> <a
-          href="https://www.169tp.com/gaogensiwa/2019/0518/43823.html" target="view_window" title="正点九妹的红色高跟鞋">正点九妹的红色高跟鞋</a>
+          href="javascript:;" target="view_window" title="正点九妹的红色高跟鞋">正点九妹的红色高跟鞋</a>
           <em>05-18 </em>
         </li>
         <li><strong class="num01">7</strong> <a
-          href="https://www.169tp.com/gaogensiwa/2019/0518/43822.html" target="view_window" title="超可爱女孩的美腿白丝袜">超可爱女孩的美腿白丝袜</a>
+          href="javascript:;" target="view_window" title="超可爱女孩的美腿白丝袜">超可爱女孩的美腿白丝袜</a>
           <em>05-18 </em>
         </li>
         <li><strong class="num01">8</strong> <a
-          href="https://www.169tp.com/xiyangmeinv/2019/0518/43821.html" target="view_window"
+          href="javascript:;" target="view_window"
           title="让人目不转睛的表妹">让人目不转睛的表妹</a>
           <em>05-18 </em>
         </li>
         <li><strong class="num01">9</strong> <a
-          href="https://www.169tp.com/guoneimeinv/2019/0517/43820.html" target="view_window" title="豪乳女神温心怡高清写真集">豪乳女神温心怡高清写真集</a>
+          href="javascript:;" target="view_window" title="豪乳女神温心怡高清写真集">豪乳女神温心怡高清写真集</a>
           <em>05-17 </em>
         </li>
         <li><strong class="num01">10</strong> <a
-          href="https://www.169tp.com/rentiyishu/2019/0517/43819.html" target="view_window" title="娜露Selena的惬意时刻">娜露Selena的惬意时刻</a>
+          href="javascript:;" target="view_window" title="娜露Selena的惬意时刻">娜露Selena的惬意时刻</a>
           <em>05-17 </em>
         </li>
       </ul>
@@ -87,11 +87,12 @@ export default {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
 
 .img {
-  width: 45vw;
-  margin-right: 10px;
+  width: calc( 45vw - 20px);
+  margin-right: 20px;
   justify-content: center;
 }
 
