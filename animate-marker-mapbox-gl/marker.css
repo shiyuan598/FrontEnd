@@ -1,0 +1,25 @@
+.marker {
+    background-position: center center;
+    width:20px;
+    height:20px;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+.marker p{
+    background-color: rgba(255, 0, 0, 0.2);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: myfirst 2s infinite;
+    box-shadow: 0px 0px 2px #f00;
+}
+@keyframes myfirst{
+    10% {transform: scale(1.2);}
+    20% {transform: scale(2);}
+    40% {transform: scale(3);}
+    60% {transform: scale(4);}
+    80% {transform: scale(6);}
+    100% {transform: scale(8);}
+}
