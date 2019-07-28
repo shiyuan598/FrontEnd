@@ -8,6 +8,14 @@ yarn-error.log*
 /test/e2e/reports/
 selenium-debug.log
 
+/iview-vue-template/
+/login/
+/vant-demo-master.zip
+/vant-demo-master/
+/vant-dev.zip
+/vant-dev/
+
+.idea/workspace.xml
 # Editor directories and files
 .idea
 .vscode
