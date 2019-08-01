@@ -7,7 +7,7 @@
                 "children": [
                     {
                         "type": "text",
-                        "value": "通常一个类会有多种事件，这些事件可能其他类也具有，但也可能为此类独有.",
+                        "value": "根据事件功能被混合到其他类的方法。",
                         "position": {
                             "start": {
                                 "line": 1,
@@ -115,7 +115,7 @@
                             "children": [
                                 {
                                     "type": "text",
-                                    "value": "监听一种特定的事件类型.",
+                                    "value": "为特定类型的事件添加监听器。",
                                     "position": {
                                         "start": {
                                             "line": 1,
@@ -232,7 +232,7 @@
                                     "children": [
                                         {
                                             "type": "text",
-                                            "value": "待监听事件类型的名称.",
+                                            "value": "待监听事件的类型。",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -293,7 +293,7 @@
                                     "children": [
                                         {
                                             "type": "text",
-                                            "value": "当此事件触发时的回调函数.\n 当事件被触发时，数据对象会传递给回调函数,\n 并使用 target 和 type 属性进行扩展. ",
+                                            "value": "当此事件触发时的回调函数。\n 数据对象会在回调函数调用时传递进来。",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -329,7 +329,7 @@
                                         },
                                         {
                                             "type": "text",
-                                            "value": ",\n  extended with ",
+                                            "value": ",\n  扩展 ",
                                             "position": {
                                                 "start": {
                                                     "line": 2,
@@ -365,7 +365,7 @@
                                         },
                                         {
                                             "type": "text",
-                                            "value": " and ",
+                                            "value": " 和 ",
                                             "position": {
                                                 "start": {
                                                     "line": 3,
@@ -399,7 +399,7 @@
                                         },
                                         {
                                             "type": "text",
-                                            "value": " properties.",
+                                            "value": " 属性。",
                                             "position": {
                                                 "start": {
                                                     "line": 3,
@@ -550,7 +550,7 @@
                             "children": [
                                 {
                                     "type": "text",
-                                    "value": "移除前一个添加的事件监听器.",
+                                    "value": "移除前一个添加的事件监听器。",
                                     "position": {
                                         "start": {
                                             "line": 1,
@@ -667,7 +667,7 @@
                                     "children": [
                                         {
                                             "type": "text",
-                                            "value": "要移除事件监听器的事件类型名称.",
+                                            "value": "待移除事件监听器的事件类型名称。",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -728,7 +728,7 @@
                                     "children": [
                                         {
                                             "type": "text",
-                                            "value": "移除事件监听器的回调函数.",
+                                            "value": "待移除的事件监听器的回调函数。",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -876,7 +876,7 @@
                             "children": [
                                 {
                                     "type": "text",
-                                    "value": "为指定事件类型添加一个一次性的监听器（只会被触发一次）.",
+                                    "value": "为特定类型的事件添加一个只会触发一次的监听器。",
                                     "position": {
                                         "start": {
                                             "line": 1,
@@ -911,7 +911,7 @@
                             "children": [
                                 {
                                     "type": "text",
-                                    "value": "注册之后，该监听器会在事件第一次触发的时候被调用.",
+                                    "value": "注册之后，该监听器会在事件第一次触发的时候被调用。",
                                     "position": {
                                         "start": {
                                             "line": 3,
@@ -1028,7 +1028,7 @@
                                     "children": [
                                         {
                                             "type": "text",
-                                            "value": "待监听的事件类型.",
+                                            "value": "待监听的事件类型。",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -1089,7 +1089,7 @@
                                     "children": [
                                         {
                                             "type": "text",
-                                            "value": "事件第一次触发时的回调函数.",
+                                            "value": "事件第一次触发时的回调函数。",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
