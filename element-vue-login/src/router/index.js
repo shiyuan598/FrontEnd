@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Home from '@/components/Home'
 import Login from '@/components/Login'
 import Edit from '@/components/Edit'
+import Axios from '@/components/Axios'
 
 Vue.use(Router)
 
@@ -24,6 +25,11 @@ export default new Router({
       path: '/Edit',
       name: 'Edit',
       component: Edit
+    },
+    {
+      path: '/Axios',
+      name: 'Axios',
+      component: Axios
     },
     {
       path: '/',

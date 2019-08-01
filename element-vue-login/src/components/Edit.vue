@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <el-button @click="click">点点</el-button>
-        <el-dialog title="编辑邮件" :visible.sync="dialogFormVisible" width="30%" class="dialog">
+        <el-dialog title="编辑邮件" :visible.sync="dialogFormVisible" width="30%">
             <el-form :ref="formEl" :model="form" :rules="rules" label-width="100px" class="form">
                 <el-form-item label="用户名:" prop="username">
                     <el-input v-model="form.username" auto-complete="on"></el-input>

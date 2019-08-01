@@ -1,25 +1,37 @@
 <template>
-<div class="background">
-<div class="login">
-    <div class="container">
-      <div class="title">{{title}}</div>
-      <div class="darkbannerwrap"></div>
-      <el-form :ref="loginForm" :model="form" :rules="rules" label-width="40px" class="form">
-        <el-form-item prop="username">
-          <el-input prefix-icon="el-icon-user" class="input"
-          placeholder="用户名" v-model="form.username" clearable></el-input>
-        </el-form-item>
-        <el-form-item prop="password">
-          <el-input prefix-icon="el-icon-lock" class="input"
-          placeholder="密码" v-model="form.password" show-password clearable></el-input>
-        </el-form-item>
-        <el-form-item>
-          <el-button class="button" type="primary" @click="submit">登录</el-button>
-        </el-form-item>
-      </el-form>
+  <div class="background">
+    <div class="login">
+      <div class="container">
+        <div class="title">{{title}}</div>
+        <div class="darkbannerwrap"></div>
+        <el-form :ref="loginForm"
+                 :model="form"
+                 :rules="rules"
+                 label-width="40px"
+                 class="form">
+          <el-form-item prop="username">
+            <el-input prefix-icon="el-icon-user"
+                      class="input"
+                      placeholder="用户名"
+                      v-model="form.username"
+                      clearable></el-input>
+          </el-form-item>
+          <el-form-item prop="password">
+            <el-input prefix-icon="el-icon-lock"
+                      class="input"
+                      placeholder="密码"
+                      v-model="form.password"
+                      show-password
+                      clearable></el-input>
+          </el-form-item>
+          <el-form-item>
+            <el-button type="primary"
+                       @click="submit">登录</el-button>
+          </el-form-item>
+        </el-form>
+      </div>
     </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -27,6 +39,9 @@ import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
+// import constConfig from '@/utils/constConfig'
+// import Cookies from 'js-cookie'
+// import axios from 'axios'
 export default {
   name: 'login',
   data () {
@@ -39,10 +54,10 @@ export default {
       },
       rules: {
         username: [
-          {required: true, message: '请输入用户名！', trigger: 'blur'}
+          { required: true, message: '请输入用户名！', trigger: 'blur' }
         ],
         password: [
-          {required: true, message: '请输入密码！', trigger: 'blur'}
+          { required: true, message: '请输入密码！', trigger: 'blur' }
         ]
       }
     }
@@ -57,18 +72,62 @@ export default {
           return false
         }
       })
+    },
+    login () {
+      // Cookies.set(constConfig.cookie.USER_INFO, this.userName, { expires: 1.0 / 24 / 12 })
+      // this.$router.push('/');
+      // // TODO: 缺少后端接口
+      // let that = this
+      // let url = that.baseConfig.baseURL + 'login'
+      // let params = {
+      //     userName: that.userName,
+      //     password: that.password
+      // }
+      // let errorMsg = that.$t('login.errorMsg')
+      // let loginError = that.$t('login.loginError')
+      // axios.post(url, params).then(result => {
+      //     let res = result.data
+      //     if (res == -1) {
+      //         that.errorMsg = errorMsg
+      //         that.showError = true
+      //     } else {
+      //         Cookies.set(constConfig.cookie.USER_INFO, that.userName, { expires: 1.0 / 24 / 30})
+      //         that.$router.push('/');
+      //     }
+      // }).catch(e => {
+      //     that.errorMsg = loginError
+      //     that.showError = true
+      // })
     }
   }
 }
 </script>
 
 <style scoped>
-.background{
+/* .cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    background: rgba(3, 3, 3 , 0.45);
+}
+.background::before {
+    background:url(../../assets/img/th01.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    opacity: 0.15;
+} */
+
+.background {
   width: 100vw;
   height: 100vh;
   background-color: #555;
 }
-.login{
+.login {
   background-color: #fff;
   height: 360px;
   width: 420px;
@@ -77,9 +136,10 @@ export default {
   margin-left: 15vw;
   position: absolute;
   font-size: 18px;
-  font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
 }
-.container{
+.container {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -87,7 +147,7 @@ export default {
 .title {
   margin: 40px 40px 0 -20px;
   padding: 18px 10px 18px 60px;
-  background: #409EFF;
+  background: #409eff;
   color: #fff;
 }
 .darkbannerwrap {
@@ -98,9 +158,8 @@ export default {
   margin-left: -18px;
 }
 
-.form{
+.form {
   margin-top: 30px;
   padding-right: 40px;
 }
-
 </style>
