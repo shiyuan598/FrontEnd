@@ -41,7 +41,7 @@
                     },
                     {
                         "type": "text",
-                        "value": " 全屏控件，包含一个控制地图进入和退出全屏模式的按钮.",
+                        "value": " 全屏控件，包含一个切换地图进入和退出全屏模式的按钮。",
                         "position": {
                             "start": {
                                 "line": 1,
@@ -207,7 +207,7 @@
                                     },
                                     {
                                         "type": "text",
-                                        "value": " is the ",
+                                        "value": " 是 ",
                                         "position": {
                                             "start": {
                                                 "line": 1,
@@ -229,7 +229,7 @@
                                         "children": [
                                             {
                                                 "type": "text",
-                                                "value": "是一个兼容的，可以全屏显示DOM元素，",
+                                                "value": "兼容DOM元素",
                                                 "position": {
                                                     "start": {
                                                         "line": 1,
@@ -261,7 +261,7 @@
                                     },
                                     {
                                         "type": "text",
-                                        "value": " . 默认情况下，地图容器元素会被全屏显示.",
+                                        "value": "它应当被全屏显示。默认情况下，地图容器元素会被全屏显示。",
                                         "position": {
                                             "start": {
                                                 "line": 1,

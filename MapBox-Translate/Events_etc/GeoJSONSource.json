@@ -7,7 +7,7 @@
                 "children": [
                     {
                         "type": "text",
-                        "value": "一种包含geojson数据的数据源.\n(点击 ",
+                        "value": "一种包含geojson数据的数据源。\n(点击 ",
                         "position": {
                             "start": {
                                 "line": 1,
@@ -63,7 +63,7 @@
                     },
                     {
                         "type": "text",
-                        "value": " 查看更详细的说明.)",
+                        "value": " 更详细的配置项文档.)",
                         "position": {
                             "start": {
                                 "line": 2,
@@ -703,7 +703,7 @@
                                     "children": [
                                         {
                                             "type": "text",
-                                            "value": "使用GeoJSON或者url作为GeoJSON数据源. 假设GeoJSON数据很大，建议采用以服务的形式来加载，即url形式.",
+                                            "value": "使用GeoJSON或者url作为GeoJSON数据源。当GeoJSON数据很大时，建议采用以服务的形式来加载，即url形式。",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -773,7 +773,7 @@
                                     "children": [
                                         {
                                             "type": "text",
-                                            "value": "this",
+                                            "value": "这",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -860,7 +860,7 @@
                             "children": [
                                 {
                                     "type": "text",
-                                    "value": "对于聚类数据源，设置缩放层级以控制何时显示聚类效果.",
+                                    "value": "对于聚类数据源，设置缩放层级以控制何时显示聚类效果。",
                                     "position": {
                                         "start": {
                                             "line": 1,
@@ -971,7 +971,7 @@
                                     "children": [
                                         {
                                             "type": "text",
-                                            "value": "聚类的 ",
+                                            "value": "聚类的值 ",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -1005,7 +1005,7 @@
                                         },
                                         {
                                             "type": "text",
-                                            "value": " 属性.",
+                                            "value": " 属性。",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -1170,7 +1170,7 @@
                                     "children": [
                                         {
                                             "type": "text",
-                                            "value": "this",
+                                            "value": "这",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -1257,7 +1257,7 @@
                             "children": [
                                 {
                                     "type": "text",
-                                    "value": "对于聚类数据源, 获取缩放级别上给定聚类的子节点(是一个geojson要素集组成的数组).",
+                                    "value": "对于聚类数据源, 获取下一个缩放级别上给定聚类的子节点(是一个geojson要素集组成的数组)。",
                                     "position": {
                                         "start": {
                                             "line": 1,
@@ -1402,7 +1402,7 @@
                                         },
                                         {
                                             "type": "text",
-                                            "value": " 值属性.",
+                                            "value": " 属性。",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -1497,7 +1497,7 @@
                                         },
                                         {
                                             "type": "text",
-                                            "value": ").",
+                                            "value": ")。",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -1576,7 +1576,7 @@
                                     "children": [
                                         {
                                             "type": "text",
-                                            "value": "this",
+                                            "value": "这",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -1663,7 +1663,7 @@
                             "children": [
                                 {
                                     "type": "text",
-                                    "value": "对于聚类数据源, 获取该类别的所有原始点 (通常是一个geojosn要素集数组).",
+                                    "value": "对于聚类数据源, 获取该类别的所有原始点 (通常是一个geojosn要素集数组)。",
                                     "position": {
                                         "start": {
                                             "line": 1,
@@ -1822,7 +1822,7 @@
                                         },
                                         {
                                             "type": "text",
-                                            "value": " 属性值.",
+                                            "value": " 性值。",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -1883,7 +1883,7 @@
                                     "children": [
                                         {
                                             "type": "text",
-                                            "value": "设置要素的最大返回数量.",
+                                            "value": "设置要素的最大返回数量。",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -1944,7 +1944,7 @@
                                     "children": [
                                         {
                                             "type": "text",
-                                            "value": "要跳过的要素数量 (例如分页).",
+                                            "value": "要跳过的要素数量 (例如分页)。",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -2039,7 +2039,7 @@
                                         },
                                         {
                                             "type": "text",
-                                            "value": ").",
+                                            "value": ")。",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
@@ -2118,7 +2118,7 @@
                                     "children": [
                                         {
                                             "type": "text",
-                                            "value": "this",
+                                            "value": "这",
                                             "position": {
                                                 "start": {
                                                     "line": 1,
