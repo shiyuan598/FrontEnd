@@ -59,7 +59,7 @@
                     },
                     {
                         "type": "text",
-                        "value": " 代表地理世界中的点和面\n坐标. ",
+                        "value": " 表示地理世界中的点和面\n坐标。",
                         "position": {
                             "start": {
                                 "line": 1,
@@ -95,7 +95,7 @@
                     },
                     {
                         "type": "text",
-                        "value": " 代表屏幕坐标系中的点.",
+                        "value": " 表示屏幕坐标系中的点。",
                         "position": {
                             "start": {
                                 "line": 2,
