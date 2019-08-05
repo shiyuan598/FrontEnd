@@ -15,7 +15,7 @@ export default {
   data () {
     let that = this
     return {
-      value: that.$store.getters.getterCount
+      value: that.$store.state.count
     }
   }
 }

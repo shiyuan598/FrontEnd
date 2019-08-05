@@ -6,12 +6,12 @@ Vue.use(Vuex)
 const state = {
   count: 0
 }
-// 使用getters来获取state,相当于state的计算属性
-const getters = {
-  getterCount (state, n = 0) {
-    return (state.count += n)
-  }
-}
+// // 使用getters来获取state,相当于state的计算属性
+// const getters = {
+//   getterCount (state, n = 0) {
+//     return (state.count += n)
+//   }
+// }
 // mutations 修改state中的数据，组件中使用commit触发
 // mutations的第一个参数是state
 const mutations = {
@@ -35,7 +35,7 @@ const actions = {
 
 export default new Vuex.Store({
   state,
-  getters,
+  // getters,
   mutations,
   actions
 })
