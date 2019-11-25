@@ -8,7 +8,7 @@
                 "children": [
                     {
                         "type": "inlineCode",
-                        "value": "Map",
+                        "value": "Map类",
                         "position": {
                             "start": {
                                 "line": 1,
@@ -25,7 +25,7 @@
                     },
                     {
                         "type": "text",
-                        "value": " (和其他类) 状态改变或地图交互中会派发各类事件。",
+                        "value": " (和其他类) 状态改变或地图交互中会派发各类事件.诸如地图/图层点击事件，地图渲染事件等 ",
                         "position": {
                             "start": {
                                 "line": 1,

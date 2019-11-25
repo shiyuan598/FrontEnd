@@ -41,7 +41,7 @@
                     },
                     {
                         "type": "text",
-                        "value": " 允许用户通过摁住鼠标右键并拖拽光标来旋转地图，或摁住",
+                        "value": " 允许用户通过按住鼠标右键并拖拽光标来旋转地图，或按下",
                         "position": {
                             "start": {
                                 "line": 1,
@@ -77,7 +77,7 @@
                     },
                     {
                         "type": "text",
-                        "value": " 键点击并拖拽光标来旋转地图。",
+                        "value": " 键并拖拽光标来旋转地图。",
                         "position": {
                             "start": {
                                 "line": 2,
@@ -261,7 +261,7 @@
             },
             {
                 "title": "param",
-                "description": "该阙值决定地图对齐到正北方向时的方位角（bearing），以度计量。",
+                "description": "该阈值决定地图对齐到正北方向时的方位角（bearing），以度计量。",
                 "lineNumber": 3,
                 "type": {
                     "type": "OptionalType",
@@ -553,7 +553,7 @@
                             "children": [
                                 {
                                     "type": "text",
-                                    "value": "返回一个布尔值，该布尔值表示 \"拖拽选装\" 交互功能是否被开启。",
+                                    "value": "返回一个布尔值，该布尔值表示 \"拖拽旋转\" 交互功能是否被开启。",
                                     "position": {
                                         "start": {
                                             "line": 1,

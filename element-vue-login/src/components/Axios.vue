@@ -34,6 +34,16 @@ export default {
         console.info(p1)
         console.info(p2)
       }))
+
+      var url = 'http://hq.sinajs.cn/list=' // baseUrl
+      var listIds = ['sz002405']
+      axios.get(url + listIds.join(','))
+        .then(function (response) {
+          console.log(response)
+        })
+        .catch(function (error) {
+          console.log(error)
+        })
     }
   }
 }

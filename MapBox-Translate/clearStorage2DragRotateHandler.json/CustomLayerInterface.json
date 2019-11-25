@@ -1626,7 +1626,7 @@
                                 },
                                 {
                                     "type": "text",
-                                    "value": " and ",
+                                    "value": " 和 ",
                                     "position": {
                                         "start": {
                                             "line": 11,
@@ -1817,7 +1817,7 @@
                     },
                     {
                         "title": "param",
-                        "description": "地图的相机矩阵。 它将球面的墨卡托坐标投影到gl坐标。 球面墨卡托坐标 `[0, 0]` 代表墨卡托世界的左上角，`[1, 1]` 代表右下角。\n 当 `renderingMode` 是 `\"3d\"`时, z坐标是正形的（保角的）。用墨卡托坐标系单位表示的x、y、z长度相等的盒子作为正方体被渲染。 {@link MercatorCoordinate}.fromLatLng\n可以被用来投影一个 `LngLat` 为一个墨卡托坐标。",
+                        "description": "地图的相机矩阵。它将球面的墨卡托坐标投影到gl坐标。 球面墨卡托坐标 `[0, 0]` 代表墨卡托世界的左上角，`[1, 1]` 代表右下角。\n 当 `renderingMode` 是 `\"3d\"`时, z坐标是正形的（保角的）。用墨卡托坐标系单位表示的x、y、z长度相等的盒子作为正方体被渲染。 {@link MercatorCoordinate}.fromLatLng\n可以被用来投影一个 `LngLat` 为一个墨卡托坐标。",
                         "lineNumber": 21,
                         "type": {
                             "type": "TypeApplication",
@@ -2262,7 +2262,7 @@
                             "children": [
                                 {
                                     "type": "text",
-                                    "value": "可选的方法， 当渲染帧允许图层准备资源或渲染到一个纹理中时被调用。",
+                                    "value": "可选的方法，当渲染帧允许图层准备资源或渲染到一个纹理中时被调用。",
                                     "position": {
                                         "start": {
                                             "line": 1,

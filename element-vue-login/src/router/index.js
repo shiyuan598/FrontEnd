@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Home from '@/components/Home'
 import Login from '@/components/Login'
 import Edit from '@/components/Edit'
 import Axios from '@/components/Axios'
@@ -15,11 +14,6 @@ export default new Router({
       path: '/HelloWorld',
       name: 'HelloWorld',
       component: HelloWorld
-    },
-    {
-      path: '/Home',
-      name: 'Home',
-      component: Home
     },
     {
       path: '/Edit',

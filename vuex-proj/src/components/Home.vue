@@ -11,7 +11,7 @@ import show from './Show.vue'
 import operation from './Operation.vue'
 export default {
   name: 'Home',
-  components: {show, operation},
+  components: { show, operation },
   data () {
     let that = this
     return {
@@ -21,7 +21,7 @@ export default {
 }
 </script>
 <style scoped>
-.container{
+.container {
   border: 1px #0094ff solid;
   border-radius: 3px;
   height: 100px;
