@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fish</title>
+    <script src="../js/lib/jquery/jquery-3.3.1.js"></script>
+</head>
+<body>
+<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, ex!</h1>
+<button id="listFish">listFish</button>
+<button id="addFish">addFish</button>
+<button id="updateFish">updateFish</button>
+<button id="addProject">addProject</button>
+<text id="result">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, officiis.</text>
+<div>
+    <ul style="list-style-image: url('../resource/img/icon/test.png')">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>
+<script>
+    var rootUrl = window.location.origin + "/gis"; //后台接口根地址
+    function getFishStr(fish) {
+        return "{name: " + fish.name + ", age: " + fish.age + ", poetry: " + fish.poetry + "},";
+    }
+
+    $(function () {
+        $("#addProject").click(function(){
+            var res = "";
+            for (var i = 1; i <= 10; i++) {
+                var name = "Allo ipsa porro " + i,
+                    state = i % 5 + 1,
+                    address = "Lorem ipsum dolor sit amet, consectetur adipisicing elit",
+                    builtunit = "Consectetur adipisicing elit",
+                    area = 315.12 * i,
+                    paceUse = "2N",
+                    warUse = "1D",
+                    minLon = 90.7,
+                    maxLon = 102.1,
+                    minLat = 32.6,
+                    maxLat = 38.5,
+                    pointLong = minLon + (maxLon - minLon) * Math.random(),
+                    pointLat = minLat + (maxLat - minLat) * Math.random(),
+                    sql = "INSERT INTO `world`.`g_project_info` " +
+                        "(`id`,`name`,`state`,`address`,`builtunit`,`area`,`pacetimeuse`,`wartimeuse`,`longitude`,`latitude`) " +
+                        "VALUES (replace(uuid(), '-', ''), ",
+                    sqlPoi = "INSERT INTO `world`.`g_poi_info` (`id`,`name`,`longitude`,`latitude`,`createtime`) VALUES (replace(uuid(), '-', ''), ";
+
+                // res += sql + "'" + name + "'," + "'" + state + "'," + "'" + address + "'," + "'" + builtunit + "'," + "'" + area + "'," + "'" + paceUse + "'," + "'" + warUse + "'," + "'" + pointLong.toFixed(6) + "'," + "'" + pointLat.toFixed(6) + "');\n";
+                res += sqlPoi + "'Dignissimos minus praesentium sequi'," + "'" + pointLong.toFixed(6) + "'," + "'" + pointLat.toFixed(6) + "',now());\n";
+            }
+            $("#result").text(res);
+
+
+        });
+
+        $("#listFish").click(function () {
+            $.ajax({
+                type: "get",
+                url: rootUrl + "/listAllFish",
+                dataType: "json",
+                data: {},
+                success: function (res) {
+                    console.log("success");
+                    var resStr = "";
+                    for (var i = 0, len = res.length; i < len; i++) {
+                        resStr += getFishStr(res[i]);
+                    }
+                    console.log(res);
+                    $("#result").text("success: " + resStr);
+                },
+                error: function (res) {
+                    console.log("error");
+                    console.log(res);
+                    $("#result").text("error: " + res);
+                }
+            });
+        });
+
+        $("#addFish").click(function () {
+            $.ajax({
+                type: "post",
+                url: rootUrl + "/addFish",
+                dataType: "json",
+                data: {
+                    name: "鲫鱼",
+                    age: 2,
+                    story: "欹雨笠，著云衣.玄真不见又空归",
+                    poetry: "白水塘边白鹭飞,龙湫山下鲫鱼肥"
+                },
+                success: function (res) {
+                    console.log("success");
+                    console.log(res);
+                    $("#result").text("success: " + res);
+                },
+                error: function (res) {
+                    console.log("error");
+                    console.log(res);
+                    $("#result").text("error: " + res);
+                }
+            });
+        });
+
+        $("#updateFish").click(function () {
+            $.ajax({
+                type: "post",
+                url: rootUrl + "/updateFish",
+                dataType: "json",
+                data: {
+                    id: 22,
+                    name: "小鲫鱼",
+                    age: 0.8,
+                    story: "欹雨笠，著云衣.",
+                    poetry: "龙湫山下鲫鱼肥"
+                },
+                success: function (res) {
+                    console.log("success");
+                    console.log(res);
+                    $("#result").text("success: " + res);
+                },
+                error: function (res) {
+                    console.log("error");
+                    console.log(res);
+                    $("#result").text("error: " + res);
+                }
+            });
+        });
+
+    });
+</script>

@@ -1,0 +1,43 @@
+/**
+ * @company:gsafety
+ * @author:wangshiyuan
+ * @date:2019-03-01
+ * @desc:工具条样式
+ */
+.toolbar_wrap {
+    background-color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    border-radius: 5px;
+}
+
+.toolbar_wrap ul {
+    margin-bottom: 0px;
+}
+
+.toolbar_wrap li {
+    list-style: none;
+    height: 40px;
+    border-bottom: 1px solid #d2d2d2;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.toolbar_wrap li:hover {
+    cursor: pointer;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.toolbar_wrap li:last-child {
+    border-bottom: none;
+}
+
+.toolbar_wrap li:first-child {
+    padding-top: 5px;
+}

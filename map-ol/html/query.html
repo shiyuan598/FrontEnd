@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>spring boot</title>
+    <script src="../js/lib/jquery/jquery-3.3.1.js"></script>
+</head>
+<body>
+<h1>Hi,Spring Boot!</h1>
+<div>
+    <ul>
+        <li><button id = "clickme">点点</button></li>
+    </ul>
+</div>
+</body>
+<script>
+    var rootUrl = window.location.origin + "/gis"; //后台接口根地址
+    $(function () {
+        //查询
+        $.ajax({
+            type: "get",
+            dataType: "json",
+            url: rootUrl + "/listUser",
+            data:{
+
+            },
+            success: function(res){
+                console.log("success!")
+                console.log("getUser: " + res);
+            },
+            error: function(res){
+                console.log(res + "error!");
+            }
+        });
+
+        //插入
+        $.ajax({
+            type: "post",
+            dataType: "json",
+            url: rootUrl + "/insertUser",
+            data:{
+                id: 19,
+                name: "鰤鱼",  //鮆鱼 鲴鱼 鲻鱼
+                age: 17,
+                gender: 0
+            },
+            success: function(res){
+                console.log("success!")
+                console.log("insert: " + res);
+            },
+            error: function(res){
+                console.log(res + "error!");
+            }
+        });
+    });
+
+</script>
+</html>

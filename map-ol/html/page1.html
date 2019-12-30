@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../js/lib/jquery/jquery-3.3.1.js"></script>
+    <title>测试websocket联动</title>
+    <style>
+        div{
+            padding: 20px;
+            border: solid 1px #9fcdff;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            color: #363636;
+            width: 600px;
+            font-size: 13px;
+        }
+        div input{
+            font-size: 14px;
+            padding-left: 3px;
+        }
+        div input:hover{
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+<div>
+    <input type="button" id="getCoordinate" value="获取坐标">
+    <label for="res">返回结果：</label>
+    <input id="res" type="textarea">
+</div>
+<div>
+    <input type="button" id="flyto" value="定位到坐标">
+    <label for="longitude">经度：<input type="text" id="longitude" value="100"></label>
+    <label for="latitude">纬度：<input type="text" id="latitude" value="40"></label>
+</div>
+<div>
+    <input type="button" id="flytoDistrict" value="定位到区划">
+    <label for="district">区划：<input type="text" id="district" value="630100">(西宁市:630100 海东:630200  玉树:632700  黄南:632300 海西:632800 海南:632500 海北:632200 果洛:632600)</label>
+</div>
+
+</body>
+
+</html>
+<script>
+    $(function () {
+        // http://172.16.42.125:9001/gis/map/html/page1.html
+        //弹出一个新窗口
+        var url = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname.split("/")[1]+ "/map/index.html?userid=user001&r=" + Math.random();
+        var myPopup = window.open(url, 'newWindow');
+
+        var userid = "user001",
+            receiver = userid + "gis",
+            websocket = null,
+            socketRootUrl = "ws://39.97.100.77:9002/websocket/connect/"; //websocket服务地址
+
+        websocket = new WebSocket(socketRootUrl + userid);
+        websocket.onopen = function () {
+            console.log("WebSocket打开连接");
+        };
+        websocket.onclose = function () {
+            console.log("WebSocket关闭连接");
+        };
+        websocket.onerror = function () {
+            console.log("WebSocket连接错误");
+        };
+
+        websocket.onmessage = function (event) {
+            var data = event.data;
+            console.log("WebSocket连接返回：" + data);
+            var type = JSON.parse(data).message.type.toString();
+            if (type == "1") {
+                $("#res").val(JSON.parse(data).message.longitude + ", " + JSON.parse(data).message.latitude);
+            }
+        };
+
+        var data = {
+            receiver: receiver,
+            message: {
+                type: "1", //1 获取坐标，2 定位到坐标， 3 定位到区划
+                longitude: "",
+                latitude: "",
+                district: "",
+                value: ""
+            }
+        };
+        document.getElementById("getCoordinate").onclick = function () {
+            data.message.type = 1;
+            websocket.send(JSON.stringify(data));
+        };
+        document.getElementById("flyto").onclick = function () {
+            data.message.type = 2;
+            data.message.longitude = $("#longitude").val() || 95;
+            data.message.latitude = $("#latitude").val() || 36;
+            websocket.send(JSON.stringify(data));
+        };
+
+        document.getElementById("flytoDistrict").onclick = function () {
+            data.message.type = 3;
+            data.message.district = $("#district").val() || 630100;
+            websocket.send(JSON.stringify(data));
+        };
+
+        window.onbeforeunload = function () { //主动关闭websocket
+            websocket.close();
+        };
+
+    });
+
+</script>

@@ -1,0 +1,5 @@
+1.shp转json
+http://mapshaper.org/
+http://2geojson.com/
+2.转换成 Base64 的图片
+http://www.vgot.net/test/image2base64.php

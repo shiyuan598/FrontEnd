@@ -1,0 +1,61 @@
+/**
+ * @company:gsafety
+ * @author:wangshiyuan
+ * @date:2019-03-01
+ * @desc:图例样式
+ */
+.div-bordor {
+    position: absolute;
+    float: left;
+    bottom: 20px;
+    margin-left: 20px;
+    background-color: #fff;
+    height: 190px;
+    color: #363636;
+    border-radius: 5px;
+}
+
+.legend_wrap {
+    font-family: "Microsoft Yahei", Arial;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 140px;
+    height: 160px;
+}
+
+.head {
+    background: #5790fb;
+    color: #ffffff;
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+    text-indent: 15px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+.content {
+    padding-top: 8px;
+    height: 130px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.content li {
+    list-style: none;
+    height: 28px;
+    line-height: 26px;
+    font-size: 14px;
+    text-indent: 55px;
+    text-align: left;
+}
+
+.content li:hover {
+    cursor: pointer;
+    background: #eee;
+}
+
+.content li span {
+    margin-left: -30px;
+}
