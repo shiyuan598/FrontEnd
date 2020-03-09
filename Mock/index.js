@@ -23,6 +23,9 @@ var func = Mock.mock({
 })
 console.info(func)
 
+var name = Mock.mock('@cname')
+console.info(name)
+
 // var data = Mock.mock({
 //   'list|1-10': [{
 //     'id|+1':1

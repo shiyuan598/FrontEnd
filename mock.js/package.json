@@ -1,0 +1,15 @@
+{
+  "name": "mock",
+  "version": "1.0.0",
+  "description": "mock.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wangshiyuan",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.1",
+    "mockjs": "^1.1.0"
+  }
+}
